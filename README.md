@@ -1,22 +1,22 @@
 <div align="center">
 
-<img src="./assets/v4-command-center.svg" width="100%" alt="Islam Elsayed — ShiftCodes engineering command center" />
+<img src="./assets/v5-hero.svg" width="100%" alt="Islam Elsayed — Founder, Systems Architect and Senior Software Engineer" />
 
 <br />
 
 [![ShiftCodes](https://img.shields.io/badge/SHIFTCODES-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white)](https://shiftcodes.net)
 [![Email](https://img.shields.io/badge/START_A_CONVERSATION-4F46E5?style=for-the-badge&logo=gmail&logoColor=white)](mailto:eslamjackie@outlook.com)
-[![GitHub](https://img.shields.io/badge/237_REPOSITORIES-18181B?style=for-the-badge&logo=github&logoColor=white)](https://github.com/TPCT?tab=repositories)
+[![Repositories](https://img.shields.io/badge/VIEW_REPOSITORIES-18181B?style=for-the-badge&logo=github&logoColor=white)](https://github.com/TPCT?tab=repositories)
 
 </div>
 
 <br />
 
-<img src="./assets/v4-proof-board.svg" width="100%" alt="Selected engineering outcomes" />
+<img src="./assets/v5-proof.svg" width="100%" alt="Selected engineering proof and outcomes" />
 
 <br />
 
-<img src="./assets/v4-architecture.svg" width="100%" alt="Engineering approach from discovery to evolution" />
+<img src="./assets/v5-process.svg" width="100%" alt="Engineering process from discovery to evolution" />
 
 <br />
 
@@ -28,7 +28,7 @@
 
 <br />
 
-**Most commercial systems are private because they power real client operations.**
+Most commercial systems are private because they power real client operations.
 
 <br />
 
