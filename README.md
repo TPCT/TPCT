@@ -1,142 +1,210 @@
 <div align="center">
 
-# Islam Elsayed
+<img src="./assets/profile-hero.svg" width="100%" alt="Islam Elsayed — Software Engineer, Systems Architect and Founder of ShiftCodes" />
 
-### Senior Software Engineer · Systems Architect · Founder of ShiftCodes
+<br />
 
-Building production-grade platforms, enterprise systems, and digital products across the Middle East.
-
-[![ShiftCodes](https://img.shields.io/badge/ShiftCodes-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white)](https://shiftcodes.net)
-[![Email](https://img.shields.io/badge/Email-4F46E5?style=for-the-badge&logo=gmail&logoColor=white)](mailto:eslamjackie@outlook.com)
+[![ShiftCodes](https://img.shields.io/badge/SHIFTCODES-7C3AED?style=for-the-badge&logo=codeigniter&logoColor=white)](https://shiftcodes.net)
+[![Email](https://img.shields.io/badge/LET'S_TALK-4F46E5?style=for-the-badge&logo=gmail&logoColor=white)](mailto:eslamjackie@outlook.com)
+[![GitHub](https://img.shields.io/badge/FOLLOW-18181B?style=for-the-badge&logo=github&logoColor=white)](https://github.com/TPCT)
 
 </div>
 
----
-
-## Engineering Business-Critical Systems
-
-I am a senior software engineer and the founder of **ShiftCodes**, a software engineering company focused on turning complex operational requirements into secure, scalable, and maintainable digital systems.
-
-My work spans enterprise resource planning, government analytics, financial and insurance platforms, education technology, workflow automation, e-commerce, and high-performance APIs.
-
-> Most of my current commercial work is maintained in private repositories because of client confidentiality.
-
-## What I Build
+<br />
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="58%" valign="top">
 
-### Enterprise Platforms
+## I engineer systems, not just features.
 
-- ERP and operations management
-- CRM and customer workflows
-- HR and workforce systems
-- Warehouse and inventory management
-- Multi-branch business platforms
-- Approval and audit workflows
+Senior Software Engineer and founder of **ShiftCodes**, focused on turning complex operations into secure, scalable, production-grade software.
+
+I work across the full lifecycle: business discovery, system architecture, backend engineering, product delivery, infrastructure, optimization, and long-term evolution.
+
+> Most current commercial systems are private because they power real client operations across the Middle East.
 
 </td>
-<td width="50%" valign="top">
+<td width="42%" valign="top">
 
-### Digital Products
+### Current Focus
 
-- SaaS platforms
-- Learning management systems
-- E-commerce and payment platforms
-- Financial and insurance portals
-- Reporting and analytics dashboards
-- API-first backend systems
+```text
+Enterprise ERP        ██████████
+Business Automation   ██████████
+Backend Architecture  ██████████
+Data & Analytics      █████████░
+Digital Products      █████████░
+Infrastructure        ████████░░
+```
 
 </td>
 </tr>
 </table>
 
-## Selected Engineering Experience
+## The systems behind the code
 
-### National Waste Analytics Platform — Saudi Arabia
+<table>
+<tr>
+<td width="25%" align="center">
+<h3>ERP</h3>
+<p>Procurement, production, warehouses, approvals, distribution and finance.</p>
+</td>
+<td width="25%" align="center">
+<h3>Platforms</h3>
+<p>SaaS, LMS, e-commerce, portals and multi-role digital products.</p>
+</td>
+<td width="25%" align="center">
+<h3>Data</h3>
+<p>ETL pipelines, operational KPIs, dashboards and enterprise reporting.</p>
+</td>
+<td width="25%" align="center">
+<h3>Infrastructure</h3>
+<p>Linux, deployment, performance, observability and production recovery.</p>
+</td>
+</tr>
+</table>
 
-Government analytics platform built with **Django, Django REST Framework, React, and Oracle 19c**.
+## Selected impact
 
-- Designed monthly KPI aggregation and ETL workflows
-- Worked with multiple Oracle schemas and large operational datasets
-- Implemented reporting for inspection coverage, violations, complaints, and citizen satisfaction
-- Improved dashboard loading performance by more than 40%
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### National Waste Analytics · Saudi Arabia
+
+**Django · DRF · React · Oracle 19c**
+
+Government analytics platform working across multiple Oracle schemas and operational datasets.
+
+- Built monthly KPI aggregation and ETL workflows
+- Delivered coverage, violation, complaint and satisfaction analytics
+- Improved dashboard loading performance by **40%+**
+
+</td>
+<td width="50%" valign="top">
 
 ### AIC Digital Ecosystem
 
-A connected operational ecosystem covering food safety, quality management, internal workflows, auditing, and enterprise operations.
+**Laravel · Filament · Modular Architecture**
 
-- Modular Laravel architecture
-- Permission-driven access control
-- Audit and compliance workflows
-- Client, auditor, and internal administration portals
-- Reporting and operational dashboards
+Connected food-safety, quality, auditing and internal operations into one digital ecosystem.
+
+- Client, auditor and internal administration portals
+- Permission-driven workflows and audit trails
+- Operational reporting and compliance automation
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
 ### Food Manufacturing ERP
 
-End-to-end ERP covering procurement, production, warehouses, approvals, stock transfers, returns, distribution, and branch sales.
+**Laravel · Filament · MySQL · Redis**
 
-- Modular monolith architecture
-- Multi-warehouse inventory
-- Production planning and forecasting
-- Tamper-resistant approval workflows
-- Arabic and English localization
+End-to-end ERP for food and sweets manufacturing operations.
 
-### Banking and Insurance Platforms
+- Procurement to production and distribution
+- Multi-warehouse inventory and branch transfers
+- Forecasting, approvals, returns and anti-tampering controls
 
-Contributed to digital platforms for banks and insurance organizations across Jordan and Iraq.
+</td>
+<td width="50%" valign="top">
 
-- Customer, policy, and claims management
-- Payment and financial workflows
-- Banking integrations and APIs
-- Secure administration portals
-- Operational and financial reporting
+### Banking & Insurance Platforms
 
-## Core Technology
+**PHP · Yii2 · Laravel · APIs**
 
-### Backend
+Digital platforms delivered for financial and insurance organizations across Jordan and Iraq.
 
-`PHP` · `Laravel` · `Filament` · `Python` · `Django` · `FastAPI` · `Node.js` · `.NET`
+- Customer, policy, claim and payment workflows
+- Banking integrations and secure administration
+- Financial calculators, APIs and operational reporting
 
-### Frontend
+</td>
+</tr>
+</table>
 
-`React` · `Next.js` · `TypeScript` · `Blade` · `Livewire` · `Alpine.js`
-
-### Data & Infrastructure
-
-`MySQL` · `MariaDB` · `PostgreSQL` · `Oracle` · `Redis` · `Docker` · `Linux` · `Apache` · `Nginx`
-
-### Architecture
-
-`Modular Monoliths` · `REST APIs` · `RBAC` · `Multi-Tenancy` · `Event-Driven Workflows` · `Payment Integrations`
-
-## Engineering Approach
-
-```text
-Understand the operation
-        ↓
-Model the real business workflow
-        ↓
-Design a maintainable architecture
-        ↓
-Build secure, measurable systems
-        ↓
-Improve through production feedback
-```
-
-I optimize for systems that remain understandable and maintainable after launch—not only software that passes the initial demo.
-
-## Public Work
-
-My public repositories include selected production projects, engineering experiments, reusable utilities, and earlier learning projects. Current commercial systems and client platforms are primarily private.
-
----
+## Technology arsenal
 
 <div align="center">
 
-### Building software that moves businesses forward.
+### Backend & Architecture
 
-**ShiftCodes — Engineering Beyond Code**
+![PHP](https://img.shields.io/badge/PHP-0D0D12?style=for-the-badge&logo=php&logoColor=777BB4)
+![Laravel](https://img.shields.io/badge/Laravel-0D0D12?style=for-the-badge&logo=laravel&logoColor=FF2D20)
+![Python](https://img.shields.io/badge/Python-0D0D12?style=for-the-badge&logo=python&logoColor=3776AB)
+![Django](https://img.shields.io/badge/Django-0D0D12?style=for-the-badge&logo=django&logoColor=44B78B)
+![FastAPI](https://img.shields.io/badge/FastAPI-0D0D12?style=for-the-badge&logo=fastapi&logoColor=009688)
+![Node.js](https://img.shields.io/badge/Node.js-0D0D12?style=for-the-badge&logo=nodedotjs&logoColor=5FA04E)
+![.NET](https://img.shields.io/badge/.NET-0D0D12?style=for-the-badge&logo=dotnet&logoColor=512BD4)
+
+### Frontend & Product
+
+![React](https://img.shields.io/badge/React-0D0D12?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-0D0D12?style=for-the-badge&logo=nextdotjs&logoColor=FFFFFF)
+![TypeScript](https://img.shields.io/badge/TypeScript-0D0D12?style=for-the-badge&logo=typescript&logoColor=3178C6)
+![Livewire](https://img.shields.io/badge/Livewire-0D0D12?style=for-the-badge&logo=livewire&logoColor=FB70A9)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-0D0D12?style=for-the-badge&logo=tailwindcss&logoColor=06B6D4)
+
+### Data & Infrastructure
+
+![MySQL](https://img.shields.io/badge/MySQL-0D0D12?style=for-the-badge&logo=mysql&logoColor=4479A1)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0D0D12?style=for-the-badge&logo=postgresql&logoColor=4169E1)
+![Oracle](https://img.shields.io/badge/Oracle-0D0D12?style=for-the-badge&logo=oracle&logoColor=F80000)
+![Redis](https://img.shields.io/badge/Redis-0D0D12?style=for-the-badge&logo=redis&logoColor=FF4438)
+![Docker](https://img.shields.io/badge/Docker-0D0D12?style=for-the-badge&logo=docker&logoColor=2496ED)
+![Linux](https://img.shields.io/badge/Linux-0D0D12?style=for-the-badge&logo=linux&logoColor=FCC624)
+![Nginx](https://img.shields.io/badge/Nginx-0D0D12?style=for-the-badge&logo=nginx&logoColor=009639)
+
+</div>
+
+## Engineering principles
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+### Business first
+
+The architecture must reflect how the operation truly works—not how a generic template expects it to work.
+
+</td>
+<td width="33%" valign="top">
+
+### Built for production
+
+Security, permissions, observability, performance and recovery are part of the product—not afterthoughts.
+
+</td>
+<td width="33%" valign="top">
+
+### Maintainable by design
+
+Clear modules, explicit workflows and predictable data models keep systems evolvable after launch.
+
+</td>
+</tr>
+</table>
+
+## GitHub activity
+
+<div align="center">
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=TPCT&show_icons=true&hide_border=true&bg_color=0D0D12&title_color=7C3AED&icon_color=4F46E5&text_color=A1A1AA&include_all_commits=true" alt="TPCT GitHub statistics" />
+<img height="170" src="https://github-readme-streak-stats.herokuapp.com?user=TPCT&hide_border=true&background=0D0D12&ring=7C3AED&fire=4F46E5&currStreakLabel=7C3AED&sideLabels=A1A1AA&dates=A1A1AA&currStreakNum=FFFFFF&sideNums=FFFFFF" alt="TPCT contribution streak" />
+
+</div>
+
+<br />
+
+<div align="center">
+
+### Complex operation. Clear architecture. Reliable software.
+
+Built by **Islam Elsayed** · Powered by **ShiftCodes**
+
+<img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=0:7C3AED,100:4F46E5&section=footer" width="100%" alt="" />
 
 </div>
