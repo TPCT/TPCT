@@ -68,6 +68,35 @@ class GeneratorTests(unittest.TestCase):
                 if text.attrib["y"] == "182":
                     self.assertGreaterEqual(int(text.attrib["font-size"]), 15)
 
+    def test_prism_styling(self):
+        palettes = {
+            "dark": ("#2B2638", "#4A4159", "#F1ECF8", "#B7ACC6", "#F299C4", "#C3AEF5", "#7FD3E3"),
+            "light": ("#FBFAFF", "#D9D2E8", "#2B253B", "#62586E", "#A8125A", "#6945BD", "#146A86"),
+        }
+        ns = {"svg": "http://www.w3.org/2000/svg"}
+        for theme, (plate, border, fg, muted, brand, crown, cyan) in palettes.items():
+            renders = [generate.render_stats(self.data, theme, TODAY)]
+            renders += [generate.render_card(repo, self.data, theme) for repo in generate.FEATURED]
+            for svg in renders:
+                with self.subTest(theme=theme, title=ET.fromstring(svg).find("svg:title", ns).text):
+                    root = ET.fromstring(svg)
+                    background = root.find("svg:rect", ns)
+                    self.assertEqual(background.attrib["fill"], plate)
+                    self.assertEqual(background.attrib["stroke"], border)
+                    stops = root.findall(".//svg:linearGradient[@id='accent']/svg:stop", ns)
+                    self.assertEqual([stop.attrib["stop-color"] for stop in stops], [brand, crown, cyan])
+                    self.assertEqual([stop.attrib["offset"] for stop in stops], ["0%", "55%", "100%"])
+                    self.assertIn('fill="url(#accent)"' if root.attrib["width"] == "500" else 'stroke="url(#accent)"', svg)
+                    for text in root.findall("svg:text", ns):
+                        self.assertEqual(text.attrib["font-family"], generate.SANS)
+                        self.assertNotIn("monospace", text.attrib["font-family"])
+                        if text.attrib["fill"] == cyan:
+                            self.assertEqual(text.text, text.text.upper())
+                            self.assertEqual(text.attrib["font-weight"], "800")
+                            self.assertEqual(text.attrib["letter-spacing"], "1.5")
+                    self.assertIn(f'fill="{fg}"', svg)
+                    self.assertIn(f'fill="{muted}"', svg)
+
     def test_languages(self):
         result = generate.aggregate_languages(self.data["languages"])
         self.assertEqual(len(result), 7)

@@ -25,12 +25,10 @@ FEATURED = [
 EXCLUDED_LANGUAGES = {"HTML", "CSS", "SCSS", "Less", "Jupyter Notebook", "Makefile", "Dockerfile", "Procfile", "Batchfile"}
 TOP_LANGUAGES = 6
 THEMES = {
-    "dark": {"bg": "#0B0D12", "surface": "#12151C", "border": "#232836", "text": "#E6E8EE", "muted": "#8B93A7", "cyan": "#22D3EE"},
-    "light": {"bg": "#FFFFFF", "surface": "#F6F7FB", "border": "#E3E6EF", "text": "#0F1222", "muted": "#5B6478", "cyan": "#0E7490"},
+    "dark": {"bg": "#2B2638", "surface": "#2B2638", "border": "#4A4159", "text": "#F1ECF8", "muted": "#B7ACC6", "cyan": "#7FD3E3", "brand": "#F299C4", "crown": "#C3AEF5"},
+    "light": {"bg": "#FBFAFF", "surface": "#FBFAFF", "border": "#D9D2E8", "text": "#2B253B", "muted": "#62586E", "cyan": "#146A86", "brand": "#A8125A", "crown": "#6945BD"},
 }
-ACCENT = ("#7C3AED", "#4F46E5")
-SANS = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
-MONO = "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace"
+SANS = "Outfit, 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
 ROOT = Path(__file__).resolve().parent.parent
 
 
@@ -148,12 +146,16 @@ def _escape(value) -> str:
     return html.escape(str(value), quote=True)
 
 
-def _text(x, y, value, size, color, mono=False, extra="") -> str:
-    return f'<text x="{x}" y="{y}" font-family="{_escape(MONO if mono else SANS)}" font-size="{size}" fill="{_escape(color)}"{extra}>{_escape(value)}</text>'
+def _text(x, y, value, size, color, extra="") -> str:
+    return f'<text x="{x}" y="{y}" font-family="{_escape(SANS)}" font-size="{size}" fill="{_escape(color)}"{extra}>{_escape(value)}</text>'
 
 
 def _svg(width, height, title) -> list[str]:
     return ['<?xml version="1.0" encoding="UTF-8"?>', f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img">', f'<title>{_escape(title)}</title>']
+
+
+def _accent(colors: dict, x1: int = 24, x2: int = 56) -> str:
+    return f'<defs><linearGradient id="accent" gradientUnits="userSpaceOnUse" x1="{x1}" y1="0" x2="{x2}" y2="0"><stop offset="0%" stop-color="{colors["brand"]}"/><stop offset="55%" stop-color="{colors["crown"]}"/><stop offset="100%" stop-color="{colors["cyan"]}"/></linearGradient></defs>'
 
 
 def render_card(repo: dict, data: dict, theme: str) -> str:
@@ -164,7 +166,7 @@ def render_card(repo: dict, data: dict, theme: str) -> str:
     lines = wrap_card_description(repo["description"])
     item = data["featured"][name]
     parts = _svg(500, 200, f'{name}: {repo["description"]}')
-    parts.extend([f'<defs><linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="{ACCENT[0]}"/><stop offset="100%" stop-color="{ACCENT[1]}"/></linearGradient></defs>', f'<rect x="0.5" y="0.5" width="499" height="199" rx="16" fill="{colors["surface"]}" stroke="{colors["border"]}"/>', '<rect x="24" y="24" width="32" height="4" rx="2" fill="url(#accent)"/>', _text(24, 64, name, 28, colors["text"], extra=' font-weight="700"')])
+    parts.extend([_accent(colors), f'<rect x="0.5" y="0.5" width="499" height="199" rx="16" fill="{colors["surface"]}" stroke="{colors["border"]}"/>', '<rect x="24" y="24" width="32" height="4" rx="2" fill="url(#accent)"/>', _text(24, 64, name, 28, colors["text"], extra=' font-weight="700"')])
     for i, line in enumerate(lines):
         parts.append(_text(24, 100 + i * 26, line, 20, colors["muted"]))
     language = repo.get("language", item["language"])
@@ -183,18 +185,18 @@ def render_card(repo: dict, data: dict, theme: str) -> str:
             points.append(f"{cx + radius * math.cos(angle):.3f},{176 + radius * math.sin(angle):.3f}")
         parts.append(f'<polygon points="{" ".join(points)}" fill="{colors["muted"]}"/>')
         parts.append(_text(f"{cx + 12:g}", 182, item["stars"], 17, colors["muted"]))
-    parts.append(_text(476, 182, tag, 15, colors["cyan"], mono=True, extra=' text-anchor="end" font-weight="600" letter-spacing="1"'))
+    parts.append(_text(476, 182, tag, 15, colors["cyan"], extra=' text-anchor="end" font-weight="800" letter-spacing="1.5"'))
     return "\n".join(parts + ["</svg>", ""])
 
 
 def render_stats(data: dict, theme: str, today: date) -> str:
     colors = THEMES[theme]
     parts = _svg(1000, 320, f'GitHub stats for {data["login"]}')
-    parts.extend([f'<rect x="0.5" y="0.5" width="999" height="319" rx="20" fill="{colors["bg"]}" stroke="{colors["border"]}"/>', _text(40, 52, "GITHUB ACTIVITY", 16, colors["cyan"], mono=True, extra=' font-weight="600" letter-spacing="3"')])
+    parts.extend([_accent(colors, 40, 960), f'<rect x="0.5" y="0.5" width="999" height="319" rx="20" fill="{colors["bg"]}" stroke="{colors["border"]}"/>', _text(40, 52, "GITHUB ACTIVITY", 16, colors["cyan"], extra=' font-weight="800" letter-spacing="1.5"')])
     metrics = [(data["contributions_last_year"], "Contributions (12 mo)"), (data["public_repos"], "Public repositories"), (data["total_stars"], "Stars earned"), (years_on_github(data["created_at"], today), "Years on GitHub")]
     for x, (value, label) in zip((40, 270, 500, 730), metrics):
         parts.extend([_text(x, 118, f"{value:,}", 44, colors["text"], extra=' font-weight="800"'), _text(x, 148, label, 17, colors["muted"])])
-    parts.extend([f'<line x1="40" y1="176" x2="960" y2="176" stroke="{colors["border"]}"/>', _text(40, 208, "TOP LANGUAGES · BY CODE SIZE", 14, colors["muted"], mono=True, extra=' font-weight="600" letter-spacing="2"')])
+    parts.extend([f'<line x1="40" y1="176" x2="960" y2="176" stroke="url(#accent)"/>', _text(40, 208, "TOP LANGUAGES · BY CODE SIZE", 14, colors["cyan"], extra=' font-weight="800" letter-spacing="1.5"')])
     languages = aggregate_languages(data["languages"])
     if languages:
         parts.extend(['<defs><clipPath id="languages"><rect x="40" y="222" width="920" height="12" rx="6"/></clipPath></defs>', '<g clip-path="url(#languages)">'])

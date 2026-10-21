@@ -7,6 +7,7 @@
 | T-003 | Rewrite README.md and remove old assets | done | T-001, T-002, plus the real generation run by the orchestrator | no |
 | T-004 | Mobile-readable repo cards (flowing fixed-width, bigger type) | done | T-003 | no |
 | T-005 | New email + ashurbank.iq replaces palm-resources-01 (user mid-run request) | done | T-004 | no |
+| T-006 | Align README visuals with portfolio Prism design language | done | T-005 | no |
 
 Orchestrator step between T-002 and T-003: `cd /home/tpct/TPCT-profile && GITHUB_TOKEN=$(gh auth token) python3 scripts/generate.py`
 (writes `assets/generated/*.svg`), then commit + push.
@@ -30,3 +31,5 @@ Orchestrator step between T-002 and T-003: `cd /home/tpct/TPCT-profile && GITHUB
 - 2026-10-21 QA eyes-on: table cards unreadable at 375px → T-004 (flowing width=380 images + bigger card type).
 - 2026-10-21 PM: Profile bio NOT updated — gh token lacks 'user' scope (PATCH /user → 404). Left to user (manual or 'gh auth refresh -s user'). Non-blocking review suggestions (T-002/T-004) logged as tech debt.
 - 2026-10-21 User mid-run: email → th3professionalcod3r@gmail.com; hide palm-resources-01. TL picked ashurbank.iq (public, production Laravel+Filament bank CMS) as replacement; forwarded email change to portfolio-site.
+- 2026-10-21 Bio updated via gh api after user granted 'user' scope: "Founder @shiftcodes · Systems Architect · Senior Full-Stack Engineer (Laravel · Python · Docker). Portfolio: tpct.github.io"; blog kept shiftcodes.net.
+- 2026-10-21 Coordinator: align README with portfolio Prism reskin. TL: aligned to the ux-prism.md spec tokens (spec is final; implementation in progress in the sibling) → T-006.

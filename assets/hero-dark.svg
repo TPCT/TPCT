@@ -2,46 +2,54 @@
   <title id="title">Islam Elsayed: Founder @ ShiftCodes, Systems Architect, Senior Full-Stack Engineer</title>
   <desc id="desc">Profile banner for Islam Elsayed (TPCT), Alexandria, Egypt.</desc>
   <defs>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7C3AED"/>
-      <stop offset="1" stop-color="#4F46E5"/>
-    </linearGradient>
-    <radialGradient id="glow">
-      <stop offset="0" stop-color="#7C3AED" stop-opacity="0.22"/>
-      <stop offset="1" stop-color="#4F46E5" stop-opacity="0"/>
-    </radialGradient>
+    <linearGradient id="accent"><stop stop-color="#F299C4"/><stop offset=".55" stop-color="#C3AEF5"/><stop offset="1" stop-color="#7FD3E3"/></linearGradient>
+    <linearGradient id="field" x2="1" y2="1"><stop stop-color="#1D192C"/><stop offset="1" stop-color="#151321"/></linearGradient>
+    <clipPath id="plate"><rect x=".5" y=".5" width="999" height="319" rx="20"/></clipPath>
+    <radialGradient id="field-a"><stop stop-color="#302038" stop-opacity=".9"/><stop offset="1" stop-color="#302038" stop-opacity="0"/></radialGradient>
+    <radialGradient id="field-b"><stop stop-color="#202C43" stop-opacity=".9"/><stop offset="1" stop-color="#202C43" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glow-a"><stop stop-color="#F299C4" stop-opacity=".25"/><stop offset="1" stop-color="#F299C4" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glow-b"><stop stop-color="#7FD3E3" stop-opacity=".2"/><stop offset="1" stop-color="#7FD3E3" stop-opacity="0"/></radialGradient>
+    <linearGradient id="facet-0" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F299C4" stop-opacity=".65"/><stop offset="1" stop-color="#88C8FC" stop-opacity=".18"/></linearGradient>
+    <linearGradient id="facet-1" x1="1" y1="0" x2="0" y2="1"><stop stop-color="#C3AEF5" stop-opacity=".65"/><stop offset="1" stop-color="#7FD3E3" stop-opacity=".18"/></linearGradient>
+    <linearGradient id="facet-2" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#88C8FC" stop-opacity=".65"/><stop offset="1" stop-color="#F299C4" stop-opacity=".18"/></linearGradient>
+    <linearGradient id="band-0"><stop stop-color="#F299C4"/><stop offset="1" stop-color="#F299C4" stop-opacity="0"/></linearGradient>
+    <linearGradient id="band-1"><stop stop-color="#C3AEF5"/><stop offset="1" stop-color="#C3AEF5" stop-opacity="0"/></linearGradient>
+    <linearGradient id="band-2"><stop stop-color="#88C8FC"/><stop offset="1" stop-color="#88C8FC" stop-opacity="0"/></linearGradient>
+    <linearGradient id="band-3"><stop stop-color="#7FD3E3"/><stop offset="1" stop-color="#7FD3E3" stop-opacity="0"/></linearGradient>
   </defs>
   <style>
-    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
-    .mono { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
+    .sans { font-family: Outfit, 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
     @media (prefers-reduced-motion: no-preference) {
-      #pulse { animation: pulse 3.2s ease-in-out infinite; }
+      #beam { animation: beam-pulse 4s ease-in-out infinite; }
+      #spectrum { animation: spectrum-breathe 6s ease-in-out infinite; }
+      @keyframes beam-pulse { 0%, 100% { opacity: .55; } 50% { opacity: 1; } }
+      @keyframes spectrum-breathe { 0%, 100% { opacity: .45; } 50% { opacity: .75; } }
     }
-    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
   </style>
-  <rect x="0.5" y="0.5" width="999" height="319" rx="24" fill="#0B0D12" stroke="#232836"/>
-  <circle cx="830" cy="160" r="230" fill="url(#glow)"/>
-  <text id="t-label" x="56" y="76" text-anchor="start" class="mono" font-size="16" font-weight="600" fill="#22D3EE" letter-spacing="3">TPCT · ALEXANDRIA, EGYPT</text>
-  <text id="t-name" x="56" y="156" text-anchor="start" class="sans" font-size="72" font-weight="800" fill="#E6E8EE" letter-spacing="-1.5">Islam Elsayed</text>
+  <rect x=".5" y=".5" width="999" height="319" rx="20" fill="#1A1726"/>
+  <g clip-path="url(#plate)">
+    <rect width="1000" height="320" fill="url(#field)"/>
+    <ellipse cx="180" cy="20" rx="500" ry="290" fill="url(#field-a)"/>
+    <ellipse cx="920" cy="128" rx="500" ry="290" fill="url(#field-b)"/>
+    <ellipse cx="755" cy="150" rx="155" ry="140" fill="url(#glow-a)"/>
+    <ellipse cx="840" cy="175" rx="150" ry="130" fill="url(#glow-b)"/>
+  </g>
+  <rect x=".5" y=".5" width="999" height="319" rx="20" fill="none" stroke="#4A4159"/>
+  <text id="t-label" x="56" y="76" class="sans" font-size="16" font-weight="800" fill="#7FD3E3" letter-spacing="1.5">TPCT · ALEXANDRIA, EGYPT</text>
+  <text id="t-name" x="56" y="156" class="sans" font-size="72" font-weight="800" fill="url(#accent)" letter-spacing="-1.5">Islam Elsayed</text>
   <rect x="56" y="180" width="96" height="6" rx="3" fill="url(#accent)"/>
-  <text id="t-role1" x="56" y="232" text-anchor="start" class="sans" font-size="30" font-weight="600" fill="#E6E8EE">Founder @ ShiftCodes</text>
-  <text id="t-role2" x="56" y="270" text-anchor="start" class="sans" font-size="24" font-weight="400" fill="#8B93A7">Systems Architect · Senior Full-Stack Engineer</text>
-  <rect x="712" y="64" width="220" height="56" rx="12" fill="#12151C" stroke="url(#accent)" stroke-width="1.5"/>
-  <circle cx="734" cy="92" r="4" fill="#8B93A7"/>
-  <circle cx="748" cy="92" r="4" fill="#8B93A7"/>
-  <circle cx="762" cy="92" r="4" fill="#8B93A7"/>
-  <rect x="782" y="88" width="96" height="8" rx="4" fill="#8B93A7" opacity="0.45"/>
-  <rect x="736" y="132" width="220" height="56" rx="12" fill="#12151C" stroke="url(#accent)" stroke-width="1.5"/>
-  <circle cx="758" cy="160" r="4" fill="#8B93A7"/>
-  <circle cx="772" cy="160" r="4" fill="#8B93A7"/>
-  <circle cx="786" cy="160" r="4" fill="#8B93A7"/>
-  <rect x="806" y="156" width="96" height="8" rx="4" fill="#8B93A7" opacity="0.45"/>
-  <rect x="712" y="200" width="220" height="56" rx="12" fill="#12151C" stroke="url(#accent)" stroke-width="1.5"/>
-  <circle cx="734" cy="228" r="4" fill="#8B93A7"/>
-  <circle cx="748" cy="228" r="4" fill="#8B93A7"/>
-  <circle cx="762" cy="228" r="4" fill="#8B93A7"/>
-  <rect x="782" y="224" width="96" height="8" rx="4" fill="#8B93A7" opacity="0.45"/>
-  <line x1="822" y1="120" x2="846" y2="132" stroke="#8B93A7" stroke-opacity="0.5" stroke-dasharray="3 5" stroke-width="1.5"/>
-  <line x1="846" y1="188" x2="822" y2="200" stroke="#8B93A7" stroke-opacity="0.5" stroke-dasharray="3 5" stroke-width="1.5"/>
-  <circle id="pulse" cx="912" cy="92" r="6" fill="#22D3EE"/>
+  <text id="t-role1" x="56" y="232" class="sans" font-size="30" font-weight="600" fill="#F1ECF8">Founder @ ShiftCodes</text>
+  <text id="t-role2" x="56" y="270" class="sans" font-size="22" fill="#B7ACC6">Systems Architect · Senior Full-Stack Engineer</text>
+  <path id="beam" d="M590 189 L739 158" fill="none" stroke="#FFFFFF" stroke-opacity=".85" stroke-width="1.5"/>
+  <g id="spectrum" opacity=".6">
+    <path d="M800 155 L970 105 L970 137 L800 161 Z" fill="url(#band-0)"/>
+    <path d="M800 161 L970 137 L970 169 L800 167 Z" fill="url(#band-1)"/>
+    <path d="M800 167 L970 169 L970 201 L800 173 Z" fill="url(#band-2)"/>
+    <path d="M800 173 L970 201 L970 233 L800 179 Z" fill="url(#band-3)"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-width="1" stroke-opacity=".75">
+    <polygon points="770,68 675,238 770,170" fill="url(#facet-0)"/>
+    <polygon points="770,68 770,170 865,238" fill="url(#facet-1)"/>
+    <polygon points="675,238 770,170 865,238" fill="url(#facet-2)"/>
+  </g>
 </svg>
