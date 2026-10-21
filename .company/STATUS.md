@@ -2,7 +2,7 @@
 
 | Ticket | Title | State | Depends on | Parallel |
 |---|---|---|---|---|
-| T-001 | Hero SVG (dark + light) | todo | none | yes, with T-002 |
+| T-001 | Hero SVG (dark + light) | done | none | yes, with T-002 |
 | T-002 | Stats + repo-card generator and daily Action | todo | none | yes, with T-001 |
 | T-003 | Rewrite README.md and remove old assets | todo | T-001, T-002, plus the real generation run by the orchestrator | no |
 
