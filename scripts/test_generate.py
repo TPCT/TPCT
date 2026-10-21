@@ -39,6 +39,35 @@ class GeneratorTests(unittest.TestCase):
                 self.assertLessEqual(len(repo["tag"]), 22)
                 self.assertLessEqual(generate.text_width(repo["name"], 26), 452)
 
+    def test_card_description_wrapping(self):
+        max_chars = int((470 - 24) / (20 * 0.56))
+        descriptions = [repo["description"] for repo in generate.FEATURED]
+        descriptions += ["word " * 100, "W" * 200, "", "one two three"]
+        for description in descriptions:
+            with self.subTest(description=description):
+                lines = generate.wrap_card_description(description)
+                self.assertLessEqual(len(lines), 3)
+                for line in lines:
+                    self.assertLessEqual(len(line), max_chars)
+                    self.assertLessEqual(24 + generate.text_width(line, 20), 470)
+        self.assertTrue(generate.wrap_card_description("word " * 100)[-1].endswith("…"))
+        self.assertEqual(generate.wrap_card_description("one two three"), ["one two three"])
+
+    def test_card_typography(self):
+        repo = dict(generate.FEATURED[0], description="word " * 100)
+        for theme in generate.THEMES:
+            root = ET.fromstring(generate.render_card(repo, self.data, theme))
+            texts = root.findall("{http://www.w3.org/2000/svg}text")
+            self.assertGreaterEqual(int(texts[0].attrib["font-size"]), 26)
+            descriptions = [text for text in texts if 100 <= int(text.attrib["y"]) <= 152]
+            self.assertEqual(len(descriptions), 3)
+            for text in descriptions:
+                self.assertGreaterEqual(int(text.attrib["font-size"]), 18)
+                self.assertLess(int(text.attrib["y"]) + 5, 169)
+            for text in texts:
+                if text.attrib["y"] == "182":
+                    self.assertGreaterEqual(int(text.attrib["font-size"]), 15)
+
     def test_languages(self):
         result = generate.aggregate_languages(self.data["languages"])
         self.assertEqual(len(result), 7)

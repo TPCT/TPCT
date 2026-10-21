@@ -37,62 +37,14 @@
 
 ## Featured projects
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://github.com/TPCT/JenDock">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/repo-JenDock-dark.svg">
-          <img src="./assets/generated/repo-JenDock-light.svg" width="100%" alt="JenDock: Self-hosted CI/CD for Docker Compose: Jenkinsfile pipelines, health checks, auto-rollback.">
-        </picture>
-      </a>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://github.com/TPCT/tpct-mac-theme">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/repo-tpct-mac-theme-dark.svg">
-          <img src="./assets/generated/repo-tpct-mac-theme-light.svg" width="100%" alt="tpct-mac-theme: macOS-style GNOME desktop: GTK4/GTK3 and Shell theme, global menu and desktop widgets.">
-        </picture>
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://github.com/TPCT/Egyptian-National-ID">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/repo-Egyptian-National-ID-dark.svg">
-          <img src="./assets/generated/repo-Egyptian-National-ID-light.svg" width="100%" alt="Egyptian-National-ID: Django REST API that validates Egyptian national IDs and extracts birth date, gender, region.">
-        </picture>
-      </a>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://github.com/TPCT/order-payment-api">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/repo-order-payment-api-dark.svg">
-          <img src="./assets/generated/repo-order-payment-api-light.svg" width="100%" alt="order-payment-api: Laravel REST API for users, products, orders and payments, secured with JWT.">
-        </picture>
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://github.com/TPCT/social-media-scheduler">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/repo-social-media-scheduler-dark.svg">
-          <img src="./assets/generated/repo-social-media-scheduler-light.svg" width="100%" alt="social-media-scheduler: Laravel app that schedules and auto-publishes posts across social platforms, with analytics.">
-        </picture>
-      </a>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://github.com/TPCT/palm-resources-01">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/repo-palm-resources-01-dark.svg">
-          <img src="./assets/generated/repo-palm-resources-01-light.svg" width="100%" alt="palm-resources-01: Idempotent exercise-session ingest on Firebase Functions and Firestore, in TypeScript.">
-        </picture>
-      </a>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <a href="https://github.com/TPCT/JenDock"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/generated/repo-JenDock-dark.svg"><img src="./assets/generated/repo-JenDock-light.svg" width="380" alt="JenDock: Self-hosted CI/CD for Docker Compose: Jenkinsfile pipelines, health checks, auto-rollback."></picture></a>
+  <a href="https://github.com/TPCT/tpct-mac-theme"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/generated/repo-tpct-mac-theme-dark.svg"><img src="./assets/generated/repo-tpct-mac-theme-light.svg" width="380" alt="tpct-mac-theme: macOS-style GNOME desktop: GTK4/GTK3 and Shell theme, global menu and desktop widgets."></picture></a>
+  <a href="https://github.com/TPCT/Egyptian-National-ID"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/generated/repo-Egyptian-National-ID-dark.svg"><img src="./assets/generated/repo-Egyptian-National-ID-light.svg" width="380" alt="Egyptian-National-ID: Django REST API that validates Egyptian national IDs and extracts birth date, gender, region."></picture></a>
+  <a href="https://github.com/TPCT/order-payment-api"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/generated/repo-order-payment-api-dark.svg"><img src="./assets/generated/repo-order-payment-api-light.svg" width="380" alt="order-payment-api: Laravel REST API for users, products, orders and payments, secured with JWT."></picture></a>
+  <a href="https://github.com/TPCT/social-media-scheduler"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/generated/repo-social-media-scheduler-dark.svg"><img src="./assets/generated/repo-social-media-scheduler-light.svg" width="380" alt="social-media-scheduler: Laravel app that schedules and auto-publishes posts across social platforms, with analytics."></picture></a>
+  <a href="https://github.com/TPCT/palm-resources-01"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/generated/repo-palm-resources-01-dark.svg"><img src="./assets/generated/repo-palm-resources-01-light.svg" width="380" alt="palm-resources-01: Idempotent exercise-session ingest on Firebase Functions and Firestore, in TypeScript."></picture></a>
+</p>
 
 ## Selected private work
 

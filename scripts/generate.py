@@ -8,6 +8,7 @@ import math
 import os
 from pathlib import Path
 import sys
+import textwrap
 import time
 import urllib.error
 import urllib.request
@@ -129,6 +130,16 @@ def wrap(text: str, size: float, max_width: float, max_lines: int) -> list[str]:
     return lines
 
 
+def wrap_card_description(text: str) -> list[str]:
+    # Leave 24px at the left and keep descriptions within x=470.
+    max_chars = math.floor((470 - 24) / (20 * 0.56))
+    lines = textwrap.wrap(text, width=max_chars, break_on_hyphens=False)
+    if len(lines) > 3:
+        lines = lines[:3]
+        lines[-1] = lines[-1][:max_chars - 1].rstrip() + "…"
+    return lines
+
+
 def years_on_github(created_at: str, today: date) -> int:
     return math.floor((today - date.fromisoformat(created_at[:10])).days / 365.25)
 
@@ -148,14 +159,14 @@ def _svg(width, height, title) -> list[str]:
 def render_card(repo: dict, data: dict, theme: str) -> str:
     colors = THEMES[theme]
     name, tag = repo["name"], repo["tag"]
-    if text_width(name, 26) > 452 or len(tag) > 22:
+    if text_width(name, 28) > 446 or len(tag) > 22:
         raise ValueError(f"Card name or tag exceeds bounds: {name}")
-    lines = wrap(repo["description"], 19, 452, 3)
+    lines = wrap_card_description(repo["description"])
     item = data["featured"][name]
     parts = _svg(500, 200, f'{name}: {repo["description"]}')
-    parts.extend([f'<defs><linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="{ACCENT[0]}"/><stop offset="100%" stop-color="{ACCENT[1]}"/></linearGradient></defs>', f'<rect x="0.5" y="0.5" width="499" height="199" rx="16" fill="{colors["surface"]}" stroke="{colors["border"]}"/>', '<rect x="24" y="24" width="32" height="4" rx="2" fill="url(#accent)"/>', _text(24, 64, name, 26, colors["text"], extra=' font-weight="700"')])
+    parts.extend([f'<defs><linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="{ACCENT[0]}"/><stop offset="100%" stop-color="{ACCENT[1]}"/></linearGradient></defs>', f'<rect x="0.5" y="0.5" width="499" height="199" rx="16" fill="{colors["surface"]}" stroke="{colors["border"]}"/>', '<rect x="24" y="24" width="32" height="4" rx="2" fill="url(#accent)"/>', _text(24, 64, name, 28, colors["text"], extra=' font-weight="700"')])
     for i, line in enumerate(lines):
-        parts.append(_text(24, 100 + i * 26, line, 19, colors["muted"]))
+        parts.append(_text(24, 100 + i * 26, line, 20, colors["muted"]))
     language = item["language"]
     if language:
         parts.append(f'<circle cx="30" cy="176" r="6" fill="{_escape(item["language_color"] or colors["muted"])}"/>')
