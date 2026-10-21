@@ -12,3 +12,8 @@ Known/manual: profile bio still the old "# Hi there… 👋" text — gh token l
 - Live github.com/TPCT, 1440px dark: Prism hero (gradient name, glass prism + spectrum), new badge colors; 11/11 images loaded (naturalWidth>0).
 - Profile bio now: "Founder @shiftcodes · Systems Architect · Senior Full-Stack Engineer (Laravel · Python · Docker). Portfolio: tpct.github.io".
 - Action run 39535598683 green.
+
+## r3 (after T-007 ShiftCodes brand, commit a7afc8d) — PASS
+- Live github.com/TPCT 1440px dark: violet hero with ShiftCodes S mark, violet badges; 11/11 images loaded.
+- 375px light: light hero/S mark, 11/11 images loaded, scrollWidth 375 (no horizontal scroll).
+- Action run 39539711108 green (contributions=8753).
