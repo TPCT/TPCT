@@ -243,6 +243,7 @@ def main(argv: list[str] | None = None) -> int:
     except OSError as exc:
         print(f"Writing failed: {exc}", file=sys.stderr)
         return 1
+    print(f"Summary: contributions={data['contributions_last_year']}, public repos={data['public_repos']}, stars={data['total_stars']}")
     print(f"{updated} file(s) updated")
     return 0
 

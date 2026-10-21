@@ -1,1 +1,3 @@
 .company/runs/
+__pycache__/
+*.pyc

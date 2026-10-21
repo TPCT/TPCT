@@ -211,3 +211,8 @@ Optional, if network is available: render with GitHub's Markdown API and check t
 
 ## Out of scope
 SVG content (T-001/T-002), GitHub profile bio/blog fields, the portfolio site.
+
+## Addendum (Tech Lead, from T-002 review)
+- In `.github/workflows/profile.yml`, add `if: github.ref == 'refs/heads/main'` to the step that commits/pushes generated assets, so a manual run from another branch never pushes to main. No other workflow changes.
+- The first real Action run (run 39529331526) failed in "Commit if changed": the commit succeeded (2 files: stats-dark/light), then `git pull --rebase origin main` failed with "cannot pull with rebase: You have unstaged changes." Fix robustly: print `git status --porcelain` (for diagnosis) before committing, then use `git pull --rebase --autostash origin main` before `git push origin HEAD:main`. Also add `PYTHONDONTWRITEBYTECODE: 1` to the job env so tests never leave `__pycache__`. Keep the existing "No changes" early exit.
+- Also print one summary line from `scripts/generate.py` (to stdout) with the computed numbers: contributions, public repos, stars (no secrets) — so CI logs show whether the Actions token sees the full contribution calendar.

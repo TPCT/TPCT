@@ -1,95 +1,153 @@
 <div align="center">
 
-<img src="./assets/v5-hero.svg" width="100%" alt="Islam Elsayed — Founder, Systems Architect and Senior Software Engineer" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
+  <img src="./assets/hero-light.svg" width="100%" alt="Islam Elsayed: Founder @ ShiftCodes, Systems Architect, Senior Full-Stack Engineer. Alexandria, Egypt.">
+</picture>
 
-<br />
+<br>
 
-[![ShiftCodes](https://img.shields.io/badge/SHIFTCODES-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white)](https://shiftcodes.net)
-[![Email](https://img.shields.io/badge/START_A_CONVERSATION-4F46E5?style=for-the-badge&logo=gmail&logoColor=white)](mailto:eslamjackie@outlook.com)
-[![Repositories](https://img.shields.io/badge/VIEW_REPOSITORIES-18181B?style=for-the-badge&logo=github&logoColor=white)](https://github.com/TPCT?tab=repositories)
+**I design and build production systems that businesses run on every day:<br>ERP suites, learning and gaming platforms, and the automation behind them.**
+
+<br>
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-tpct.github.io-7C3AED?style=for-the-badge&logo=githubpages&logoColor=white)](https://tpct.github.io)
+[![ShiftCodes](https://img.shields.io/badge/ShiftCodes-shiftcodes.net-4F46E5?style=for-the-badge&logo=googlechrome&logoColor=white)](https://shiftcodes.net)
+[![Email](https://img.shields.io/badge/Email-eslamjackie%40outlook.com-12151C?style=for-the-badge&logo=microsoftoutlook&logoColor=white)](mailto:eslamjackie@outlook.com)
+
+<sub>Case studies and full project history live on the portfolio: <a href="https://tpct.github.io"><b>tpct.github.io</b></a></sub>
 
 </div>
 
-<br />
+## About
 
-<img src="./assets/v5-proof.svg" width="100%" alt="Selected engineering proof and outcomes" />
+- Founder of **[ShiftCodes](https://shiftcodes.net)**, a software studio that builds custom business platforms.
+- Systems architect and senior full-stack engineer: Laravel and Python at the core, Docker and Linux on the server.
+- I care about modular architecture, clean APIs, role-based access, and delivery pipelines that make shipping safe.
 
-<br />
+## Stack
 
-<img src="./assets/v5-process.svg" width="100%" alt="Engineering process from discovery to evolution" />
+| Area | Tools |
+|---|---|
+| **Languages** | PHP · Python · TypeScript · JavaScript · C# |
+| **Backend** | Laravel · Filament · Django / DRF · FastAPI · Node.js · .NET |
+| **Frontend** | React · Next.js · Livewire · Tailwind CSS |
+| **Data** | PostgreSQL · MySQL / MariaDB · Oracle · Redis · Firestore |
+| **Infra & delivery** | Docker · Linux · Nginx · GitHub Actions · CI/CD pipelines |
 
-<br />
-
-<div align="center">
-
-## Core Engineering Stack
+## Featured projects
 
 <table>
-<tr>
-<td width="50%" valign="top" align="center">
-
-### Languages
-
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111111)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![C%23](https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
-
-### Backend & Frameworks
-
-![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
-![Filament](https://img.shields.io/badge/Filament-F59E0B?style=for-the-badge&logo=laravel&logoColor=111111)
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
-
-### Frontend
-
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=111111)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![Livewire](https://img.shields.io/badge/Livewire-FB70A9?style=for-the-badge&logo=livewire&logoColor=white)
-![Blade](https://img.shields.io/badge/Blade-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-
-</td>
-<td width="50%" valign="top" align="center">
-
-### Databases
-
-![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-
-### Infrastructure
-
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=111111)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
-![Apache](https://img.shields.io/badge/Apache-D22128?style=for-the-badge&logo=apache&logoColor=white)
-
-### Architecture & Delivery
-
-![REST APIs](https://img.shields.io/badge/REST_APIs-0D0D12?style=for-the-badge&logo=fastapi&logoColor=white)
-![Modular Monolith](https://img.shields.io/badge/Modular_Monolith-7C3AED?style=for-the-badge&logo=databricks&logoColor=white)
-![RBAC](https://img.shields.io/badge/RBAC-4F46E5?style=for-the-badge&logo=auth0&logoColor=white)
-![Automation](https://img.shields.io/badge/Automation-18181B?style=for-the-badge&logo=githubactions&logoColor=white)
-
-</td>
-</tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/TPCT/JenDock">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/repo-JenDock-dark.svg">
+          <img src="./assets/generated/repo-JenDock-light.svg" width="100%" alt="JenDock: Self-hosted CI/CD for Docker Compose: Jenkinsfile pipelines, health checks, auto-rollback.">
+        </picture>
+      </a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/TPCT/tpct-mac-theme">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/repo-tpct-mac-theme-dark.svg">
+          <img src="./assets/generated/repo-tpct-mac-theme-light.svg" width="100%" alt="tpct-mac-theme: macOS-style GNOME desktop: GTK4/GTK3 and Shell theme, global menu and desktop widgets.">
+        </picture>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/TPCT/Egyptian-National-ID">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/repo-Egyptian-National-ID-dark.svg">
+          <img src="./assets/generated/repo-Egyptian-National-ID-light.svg" width="100%" alt="Egyptian-National-ID: Django REST API that validates Egyptian national IDs and extracts birth date, gender, region.">
+        </picture>
+      </a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/TPCT/order-payment-api">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/repo-order-payment-api-dark.svg">
+          <img src="./assets/generated/repo-order-payment-api-light.svg" width="100%" alt="order-payment-api: Laravel REST API for users, products, orders and payments, secured with JWT.">
+        </picture>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/TPCT/social-media-scheduler">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/repo-social-media-scheduler-dark.svg">
+          <img src="./assets/generated/repo-social-media-scheduler-light.svg" width="100%" alt="social-media-scheduler: Laravel app that schedules and auto-publishes posts across social platforms, with analytics.">
+        </picture>
+      </a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/TPCT/palm-resources-01">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/repo-palm-resources-01-dark.svg">
+          <img src="./assets/generated/repo-palm-resources-01-light.svg" width="100%" alt="palm-resources-01: Idempotent exercise-session ingest on Firebase Functions and Firestore, in TypeScript.">
+        </picture>
+      </a>
+    </td>
+  </tr>
 </table>
 
-<br />
+## Selected private work
 
-### Production software for operations that cannot afford to stop.
+Most of my commercial work is private because it runs real client operations. These are the kinds of products I build:
 
-Most commercial systems are private because they power real client operations.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <b>Business suites</b><br>
+      <sub>ERP · HRM · POS · CRM</sub><br>
+      Modular platforms for operations, people, sales and customers, with role-based access and reporting.
+    </td>
+    <td width="50%" valign="top">
+      <b>Learning platforms</b><br>
+      <sub>LMS</sub><br>
+      Course delivery, enrolment and progress tracking for training businesses.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <b>Gaming platform &amp; bots</b><br>
+      <sub>Platform · Bots · Automation</sub><br>
+      A platform back end, plus the bots and automation that run community and game operations.
+    </td>
+    <td width="50%" valign="top">
+      <b>OCR &amp; document processing</b><br>
+      <sub>OCR · Pipelines</sub><br>
+      Pipelines that turn scanned documents into structured, searchable data.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <b>eSIM platform</b><br>
+      <sub>Telecom · Provisioning</sub><br>
+      Ordering, provisioning and account management for digital SIM products.
+    </td>
+    <td width="50%" valign="top">
+      <b>Monitoring &amp; CI tooling</b><br>
+      <sub>DevOps · Observability</sub><br>
+      Self-hosted deploy pipelines, health checks and alerting for production services.
+    </td>
+  </tr>
+</table>
 
-<br />
+## GitHub stats
 
-[![Build with ShiftCodes](https://img.shields.io/badge/BUILD_WITH_SHIFTCODES-7C3AED?style=for-the-badge&logo=codeigniter&logoColor=white)](https://shiftcodes.net)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/stats-dark.svg">
+  <img src="./assets/generated/stats-light.svg" width="100%" alt="GitHub stats for TPCT: contributions in the last 12 months, public repositories, stars and top languages.">
+</picture>
 
-</div>
+<sub>Generated daily from the GitHub API by a workflow in this repository.</sub>
+
+## Contact
+
+Open to architecture work, platform builds and technical partnerships.
+
+**Email** [eslamjackie@outlook.com](mailto:eslamjackie@outlook.com) · **Studio** [shiftcodes.net](https://shiftcodes.net) · **Portfolio** [tpct.github.io](https://tpct.github.io)

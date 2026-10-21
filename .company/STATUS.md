@@ -4,7 +4,7 @@
 |---|---|---|---|---|
 | T-001 | Hero SVG (dark + light) | done | none | yes, with T-002 |
 | T-002 | Stats + repo-card generator and daily Action | done | none | yes, with T-001 |
-| T-003 | Rewrite README.md and remove old assets | todo | T-001, T-002, plus the real generation run by the orchestrator | no |
+| T-003 | Rewrite README.md and remove old assets | done | T-001, T-002, plus the real generation run by the orchestrator | no |
 
 Orchestrator step between T-002 and T-003: `cd /home/tpct/TPCT-profile && GITHUB_TOKEN=$(gh auth token) python3 scripts/generate.py`
 (writes `assets/generated/*.svg`), then commit + push.
@@ -24,3 +24,4 @@ Orchestrator step between T-002 and T-003: `cd /home/tpct/TPCT-profile && GITHUB
 - 2026-10-21 UX: The hero has no avatar/photo and no section dividers. Its only animation is one cyan dot pulse, disabled under prefers-reduced-motion.
 - 2026-10-21 TL: All 12 old assets (v3/v4/v5, profile-hero, impact, capabilities) are deleted in T-003.
 - 2026-10-21 TL: T-002 review suggestion #1 (guard commit step to main) folded into T-003 as a small addendum.
+- 2026-10-21 Review T-003-r1: tracked __pycache__ (cause of first Action failure) untracked + ignored by orchestrator (git-only fix); counts as r1 fix.

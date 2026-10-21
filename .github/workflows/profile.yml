@@ -21,6 +21,8 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    env:
+      PYTHONDONTWRITEBYTECODE: 1
     steps:
       - uses: actions/checkout@v4
 
@@ -33,14 +35,16 @@ jobs:
         run: python3 scripts/generate.py --out assets/generated
 
       - name: Commit if changed
+        if: github.ref == 'refs/heads/main'
         run: |
           if [ -z "$(git status --porcelain assets/generated)" ]; then
             echo "No changes"
             exit 0
           fi
+          git status --porcelain
           git config user.name "github-actions[bot]"
           git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
           git add assets/generated
           git commit -m "chore: refresh generated profile assets"
-          git pull --rebase origin main
+          git pull --rebase --autostash origin main
           git push origin HEAD:main
