@@ -68,10 +68,10 @@ class GeneratorTests(unittest.TestCase):
                 if text.attrib["y"] == "182":
                     self.assertGreaterEqual(int(text.attrib["font-size"]), 15)
 
-    def test_prism_styling(self):
+    def test_shiftcodes_styling(self):
         palettes = {
-            "dark": ("#2B2638", "#4A4159", "#F1ECF8", "#B7ACC6", "#F299C4", "#C3AEF5", "#7FD3E3"),
-            "light": ("#FBFAFF", "#D9D2E8", "#2B253B", "#62586E", "#A8125A", "#6945BD", "#146A86"),
+            "dark": ("#1E1832", "#3A3160", "#F3F0FF", "#ABA1CC", "#C9B8FF", "#8A5BFF", "#8FA0FF"),
+            "light": ("#FCFBFF", "#D8D1F0", "#1C1530", "#5A5275", "#6E2BFB", "#5A1FE0", "#3346C4"),
         }
         ns = {"svg": "http://www.w3.org/2000/svg"}
         for theme, (plate, border, fg, muted, brand, crown, cyan) in palettes.items():
@@ -85,7 +85,7 @@ class GeneratorTests(unittest.TestCase):
                     self.assertEqual(background.attrib["stroke"], border)
                     stops = root.findall(".//svg:linearGradient[@id='accent']/svg:stop", ns)
                     self.assertEqual([stop.attrib["stop-color"] for stop in stops], [brand, crown, cyan])
-                    self.assertEqual([stop.attrib["offset"] for stop in stops], ["0%", "55%", "100%"])
+                    self.assertEqual([stop.attrib["offset"] for stop in stops], ["0%", "50%" if theme == "dark" else "55%", "100%"])
                     self.assertIn('fill="url(#accent)"' if root.attrib["width"] == "500" else 'stroke="url(#accent)"', svg)
                     for text in root.findall("svg:text", ns):
                         self.assertEqual(text.attrib["font-family"], generate.SANS)
@@ -96,6 +96,17 @@ class GeneratorTests(unittest.TestCase):
                             self.assertEqual(text.attrib["letter-spacing"], "1.5")
                     self.assertIn(f'fill="{fg}"', svg)
                     self.assertIn(f'fill="{muted}"', svg)
+
+    def test_muted_contrast(self):
+        def luminance(color):
+            channels = [int(color[i:i + 2], 16) / 255 for i in (1, 3, 5)]
+            linear = [c / 12.92 if c <= 0.04045 else ((c + 0.055) / 1.055) ** 2.4 for c in channels]
+            return sum(c * weight for c, weight in zip(linear, (0.2126, 0.7152, 0.0722)))
+
+        for theme, colors in generate.THEMES.items():
+            with self.subTest(theme=theme):
+                values = sorted([luminance(colors["muted"]), luminance(colors["surface"])])
+                self.assertGreaterEqual((values[1] + 0.05) / (values[0] + 0.05), 4.5)
 
     def test_languages(self):
         result = generate.aggregate_languages(self.data["languages"])

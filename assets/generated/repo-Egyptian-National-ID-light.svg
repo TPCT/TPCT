@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="500" height="200" viewBox="0 0 500 200" role="img">
 <title>Egyptian-National-ID: Django REST API that validates Egyptian national IDs and extracts birth date, gender, region.</title>
-<defs><linearGradient id="accent" gradientUnits="userSpaceOnUse" x1="24" y1="0" x2="56" y2="0"><stop offset="0%" stop-color="#A8125A"/><stop offset="55%" stop-color="#6945BD"/><stop offset="100%" stop-color="#146A86"/></linearGradient></defs>
-<rect x="0.5" y="0.5" width="499" height="199" rx="16" fill="#FBFAFF" stroke="#D9D2E8"/>
+<defs><linearGradient id="accent" gradientUnits="userSpaceOnUse" x1="24" y1="0" x2="56" y2="0"><stop offset="0%" stop-color="#6E2BFB"/><stop offset="55%" stop-color="#5A1FE0"/><stop offset="100%" stop-color="#3346C4"/></linearGradient></defs>
+<rect x="0.5" y="0.5" width="499" height="199" rx="16" fill="#FCFBFF" stroke="#D8D1F0"/>
 <rect x="24" y="24" width="32" height="4" rx="2" fill="url(#accent)"/>
-<text x="24" y="64" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="28" fill="#2B253B" font-weight="700">Egyptian-National-ID</text>
-<text x="24" y="100" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="20" fill="#62586E">Django REST API that validates Egyptian</text>
-<text x="24" y="126" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="20" fill="#62586E">national IDs and extracts birth date,</text>
-<text x="24" y="152" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="20" fill="#62586E">gender, region.</text>
+<text x="24" y="64" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="28" fill="#1C1530" font-weight="700">Egyptian-National-ID</text>
+<text x="24" y="100" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="20" fill="#5A5275">Django REST API that validates Egyptian</text>
+<text x="24" y="126" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="20" fill="#5A5275">national IDs and extracts birth date,</text>
+<text x="24" y="152" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="20" fill="#5A5275">gender, region.</text>
 <circle cx="30" cy="176" r="6" fill="#3572A5"/>
-<text x="44" y="182" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="17" fill="#62586E">Python</text>
-<text x="476" y="182" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="15" fill="#146A86" text-anchor="end" font-weight="800" letter-spacing="1.5">DJANGO REST</text>
+<text x="44" y="182" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="17" fill="#5A5275">Python</text>
+<text x="476" y="182" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="15" fill="#3346C4" text-anchor="end" font-weight="800" letter-spacing="1.5">DJANGO REST</text>
 </svg>

@@ -8,6 +8,7 @@
 | T-004 | Mobile-readable repo cards (flowing fixed-width, bigger type) | done | T-003 | no |
 | T-005 | New email + ashurbank.iq replaces palm-resources-01 (user mid-run request) | done | T-004 | no |
 | T-006 | Align README visuals with portfolio Prism design language | done | T-005 | no |
+| T-007 | Re-align with ShiftCodes brand (violet + animated S logo) | done | T-006 | no |
 
 Orchestrator step between T-002 and T-003: `cd /home/tpct/TPCT-profile && GITHUB_TOKEN=$(gh auth token) python3 scripts/generate.py`
 (writes `assets/generated/*.svg`), then commit + push.
@@ -33,3 +34,4 @@ Orchestrator step between T-002 and T-003: `cd /home/tpct/TPCT-profile && GITHUB
 - 2026-10-21 User mid-run: email → th3professionalcod3r@gmail.com; hide palm-resources-01. TL picked ashurbank.iq (public, production Laravel+Filament bank CMS) as replacement; forwarded email change to portfolio-site.
 - 2026-10-21 Bio updated via gh api after user granted 'user' scope: "Founder @shiftcodes · Systems Architect · Senior Full-Stack Engineer (Laravel · Python · Docker). Portfolio: tpct.github.io"; blog kept shiftcodes.net.
 - 2026-10-21 Coordinator: align README with portfolio Prism reskin. TL: aligned to the ux-prism.md spec tokens (spec is final; implementation in progress in the sibling) → T-006.
+- 2026-10-21 Coordinator: user rejected berry Prism palette; brand = ShiftCodes logo violet #6E2BFB + animated S mark. Waited for portfolio T-009 (5711046), tokens/mark copied from it → T-007.

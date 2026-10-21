@@ -25,8 +25,8 @@ FEATURED = [
 EXCLUDED_LANGUAGES = {"HTML", "CSS", "SCSS", "Less", "Jupyter Notebook", "Makefile", "Dockerfile", "Procfile", "Batchfile"}
 TOP_LANGUAGES = 6
 THEMES = {
-    "dark": {"bg": "#2B2638", "surface": "#2B2638", "border": "#4A4159", "text": "#F1ECF8", "muted": "#B7ACC6", "cyan": "#7FD3E3", "brand": "#F299C4", "crown": "#C3AEF5"},
-    "light": {"bg": "#FBFAFF", "surface": "#FBFAFF", "border": "#D9D2E8", "text": "#2B253B", "muted": "#62586E", "cyan": "#146A86", "brand": "#A8125A", "crown": "#6945BD"},
+    "dark": {"bg": "#1E1832", "surface": "#1E1832", "border": "#3A3160", "text": "#F3F0FF", "muted": "#ABA1CC", "cyan": "#8FA0FF", "brand": "#C9B8FF", "crown": "#8A5BFF", "accent_mid": "50%"},
+    "light": {"bg": "#FCFBFF", "surface": "#FCFBFF", "border": "#D8D1F0", "text": "#1C1530", "muted": "#5A5275", "cyan": "#3346C4", "brand": "#6E2BFB", "crown": "#5A1FE0", "accent_mid": "55%"},
 }
 SANS = "Outfit, 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
 ROOT = Path(__file__).resolve().parent.parent
@@ -155,7 +155,7 @@ def _svg(width, height, title) -> list[str]:
 
 
 def _accent(colors: dict, x1: int = 24, x2: int = 56) -> str:
-    return f'<defs><linearGradient id="accent" gradientUnits="userSpaceOnUse" x1="{x1}" y1="0" x2="{x2}" y2="0"><stop offset="0%" stop-color="{colors["brand"]}"/><stop offset="55%" stop-color="{colors["crown"]}"/><stop offset="100%" stop-color="{colors["cyan"]}"/></linearGradient></defs>'
+    return f'<defs><linearGradient id="accent" gradientUnits="userSpaceOnUse" x1="{x1}" y1="0" x2="{x2}" y2="0"><stop offset="0%" stop-color="{colors["brand"]}"/><stop offset="{colors["accent_mid"]}" stop-color="{colors["crown"]}"/><stop offset="100%" stop-color="{colors["cyan"]}"/></linearGradient></defs>'
 
 
 def render_card(repo: dict, data: dict, theme: str) -> str:

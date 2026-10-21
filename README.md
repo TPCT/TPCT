@@ -11,9 +11,9 @@
 
 <br>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-tpct.github.io-A8125A?style=for-the-badge&logo=githubpages&logoColor=white)](https://tpct.github.io)
-[![ShiftCodes](https://img.shields.io/badge/ShiftCodes-shiftcodes.net-6945BD?style=for-the-badge&logo=googlechrome&logoColor=white)](https://shiftcodes.net)
-[![Email](https://img.shields.io/badge/Email-th3professionalcod3r%40gmail.com-2B2638?style=for-the-badge&logo=gmail&logoColor=white)](mailto:th3professionalcod3r@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-tpct.github.io-6E2BFB?style=for-the-badge&logo=githubpages&logoColor=white)](https://tpct.github.io)
+[![ShiftCodes](https://img.shields.io/badge/ShiftCodes-shiftcodes.net-5A1FE0?style=for-the-badge&logo=googlechrome&logoColor=white)](https://shiftcodes.net)
+[![Email](https://img.shields.io/badge/Email-th3professionalcod3r%40gmail.com-1E1832?style=for-the-badge&logo=gmail&logoColor=white)](mailto:th3professionalcod3r@gmail.com)
 
 <sub>Case studies and full project history live on the portfolio: <a href="https://tpct.github.io"><b>tpct.github.io</b></a></sub>
 

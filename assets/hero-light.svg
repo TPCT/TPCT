@@ -2,54 +2,54 @@
   <title id="title">Islam Elsayed: Founder @ ShiftCodes, Systems Architect, Senior Full-Stack Engineer</title>
   <desc id="desc">Profile banner for Islam Elsayed (TPCT), Alexandria, Egypt.</desc>
   <defs>
-    <linearGradient id="accent"><stop stop-color="#A8125A"/><stop offset=".55" stop-color="#6945BD"/><stop offset="1" stop-color="#146A86"/></linearGradient>
-    <linearGradient id="field" x2="1" y2="1"><stop stop-color="#FBFAFF"/><stop offset="1" stop-color="#FBFAFF"/></linearGradient>
+    <linearGradient id="accent"><stop stop-color="#6E2BFB"/><stop offset=".55" stop-color="#5A1FE0"/><stop offset="1" stop-color="#3346C4"/></linearGradient>
+    <linearGradient id="logo" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7B3FFF"/><stop offset=".5" stop-color="#6E2BFB"/><stop offset="1" stop-color="#5A1FE0"/></linearGradient>
+    <linearGradient id="field" x2="1" y2="1"><stop stop-color="#F3F0FD"/><stop offset="1" stop-color="#E7E3F7"/></linearGradient>
     <clipPath id="plate"><rect x=".5" y=".5" width="999" height="319" rx="20"/></clipPath>
-    <radialGradient id="field-a"><stop stop-color="#FCE3EF" stop-opacity=".55"/><stop offset="1" stop-color="#FCE3EF" stop-opacity="0"/></radialGradient>
-    <radialGradient id="field-b"><stop stop-color="#D3E5F3" stop-opacity=".55"/><stop offset="1" stop-color="#D3E5F3" stop-opacity="0"/></radialGradient>
-    <radialGradient id="glow-a"><stop stop-color="#E0569A" stop-opacity=".25"/><stop offset="1" stop-color="#E0569A" stop-opacity="0"/></radialGradient>
-    <radialGradient id="glow-b"><stop stop-color="#2BB3C9" stop-opacity=".2"/><stop offset="1" stop-color="#2BB3C9" stop-opacity="0"/></radialGradient>
-    <linearGradient id="facet-0" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E0569A" stop-opacity=".65"/><stop offset="1" stop-color="#3E9BE0" stop-opacity=".18"/></linearGradient>
-    <linearGradient id="facet-1" x1="1" y1="0" x2="0" y2="1"><stop stop-color="#8E6BE0" stop-opacity=".65"/><stop offset="1" stop-color="#2BB3C9" stop-opacity=".18"/></linearGradient>
-    <linearGradient id="facet-2" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#3E9BE0" stop-opacity=".65"/><stop offset="1" stop-color="#E0569A" stop-opacity=".18"/></linearGradient>
-    <linearGradient id="band-0"><stop stop-color="#E0569A"/><stop offset="1" stop-color="#E0569A" stop-opacity="0"/></linearGradient>
-    <linearGradient id="band-1"><stop stop-color="#8E6BE0"/><stop offset="1" stop-color="#8E6BE0" stop-opacity="0"/></linearGradient>
-    <linearGradient id="band-2"><stop stop-color="#3E9BE0"/><stop offset="1" stop-color="#3E9BE0" stop-opacity="0"/></linearGradient>
-    <linearGradient id="band-3"><stop stop-color="#2BB3C9"/><stop offset="1" stop-color="#2BB3C9" stop-opacity="0"/></linearGradient>
+    <radialGradient id="field-a"><stop stop-color="#E4DAFF" stop-opacity=".9"/><stop offset="1" stop-color="#E4DAFF" stop-opacity="0"/></radialGradient>
+    <radialGradient id="field-b"><stop stop-color="#DCE2FF" stop-opacity=".9"/><stop offset="1" stop-color="#DCE2FF" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glow-a"><stop stop-color="#6E2BFB" stop-opacity=".28"/><stop offset="1" stop-color="#6E2BFB" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glow-b"><stop stop-color="#3346C4" stop-opacity=".18"/><stop offset="1" stop-color="#3346C4" stop-opacity="0"/></radialGradient>
   </defs>
   <style>
     .sans { font-family: Outfit, 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
     @media (prefers-reduced-motion: no-preference) {
-      #beam { animation: beam-pulse 4s ease-in-out infinite; }
-      #spectrum { animation: spectrum-breathe 6s ease-in-out infinite; }
-      @keyframes beam-pulse { 0%, 100% { opacity: .55; } 50% { opacity: 1; } }
-      @keyframes spectrum-breathe { 0%, 100% { opacity: .45; } 50% { opacity: .75; } }
+      #sc-hook-top, #sc-hook-bottom, #sc-lt, #sc-gt, #sc-slash { transform-box: fill-box; transform-origin: center; }
+      #sc-hook-top { animation: top-in 900ms ease-out 350ms backwards, top-drift 7s ease-in-out 1950ms infinite alternate; }
+      #sc-hook-bottom { animation: bottom-in 900ms ease-out 470ms backwards, bottom-drift 7s ease-in-out 1950ms infinite alternate; }
+      #sc-lt { animation: lt-in 420ms ease-out 950ms backwards; }
+      #sc-gt { animation: gt-in 420ms ease-out 1050ms backwards; }
+      #sc-slash { animation: slash-in 420ms ease-out 1150ms backwards, cursor 1.6s ease-in-out 1950ms infinite; }
+      @keyframes top-in { from { transform: translate(48px, -40px) rotate(-8deg); opacity: 0; } to { transform: none; opacity: 1; } }
+      @keyframes bottom-in { from { transform: translate(-48px, 40px) rotate(-8deg); opacity: 0; } to { transform: none; opacity: 1; } }
+      @keyframes lt-in { from { transform: translateX(14px); opacity: 0; } to { transform: none; opacity: 1; } }
+      @keyframes gt-in { from { transform: translateX(-14px); opacity: 0; } to { transform: none; opacity: 1; } }
+      @keyframes slash-in { from { transform: translateY(-12px); opacity: 0; } to { transform: none; opacity: 1; } }
+      @keyframes top-drift { to { transform: translate(5px, -4px); } }
+      @keyframes bottom-drift { to { transform: translate(-5px, 4px); } }
+      @keyframes cursor { 50% { opacity: .55; } }
     }
   </style>
-  <rect x=".5" y=".5" width="999" height="319" rx="20" fill="#FBFAFF"/>
+  <rect x=".5" y=".5" width="999" height="319" rx="20" fill="#EEEBFA"/>
   <g clip-path="url(#plate)">
     <rect width="1000" height="320" fill="url(#field)"/>
     <ellipse cx="180" cy="20" rx="500" ry="290" fill="url(#field-a)"/>
     <ellipse cx="920" cy="128" rx="500" ry="290" fill="url(#field-b)"/>
+    <circle cx="790" cy="160" r="128" fill="#FCFBFF" stroke="#D8D1F0" stroke-opacity=".5"/>
     <ellipse cx="755" cy="150" rx="155" ry="140" fill="url(#glow-a)"/>
     <ellipse cx="840" cy="175" rx="150" ry="130" fill="url(#glow-b)"/>
   </g>
-  <rect x=".5" y=".5" width="999" height="319" rx="20" fill="none" stroke="#D9D2E8"/>
-  <text id="t-label" x="56" y="76" class="sans" font-size="16" font-weight="800" fill="#146A86" letter-spacing="1.5">TPCT · ALEXANDRIA, EGYPT</text>
+  <rect x=".5" y=".5" width="999" height="319" rx="20" fill="none" stroke="#D8D1F0"/>
+  <text id="t-label" x="56" y="76" class="sans" font-size="16" font-weight="800" fill="#3346C4" letter-spacing="1.5">TPCT · ALEXANDRIA, EGYPT</text>
   <text id="t-name" x="56" y="156" class="sans" font-size="72" font-weight="800" fill="url(#accent)" letter-spacing="-1.5">Islam Elsayed</text>
   <rect x="56" y="180" width="96" height="6" rx="3" fill="url(#accent)"/>
-  <text id="t-role1" x="56" y="232" class="sans" font-size="30" font-weight="600" fill="#2B253B">Founder @ ShiftCodes</text>
-  <text id="t-role2" x="56" y="270" class="sans" font-size="22" fill="#62586E">Systems Architect · Senior Full-Stack Engineer</text>
-  <path id="beam" d="M590 189 L739 158" fill="none" stroke="#2B253B" stroke-opacity=".55" stroke-width="1.5"/>
-  <g id="spectrum" opacity=".6">
-    <path d="M800 155 L970 105 L970 137 L800 161 Z" fill="url(#band-0)"/>
-    <path d="M800 161 L970 137 L970 169 L800 167 Z" fill="url(#band-1)"/>
-    <path d="M800 167 L970 169 L970 201 L800 173 Z" fill="url(#band-2)"/>
-    <path d="M800 173 L970 201 L970 233 L800 179 Z" fill="url(#band-3)"/>
-  </g>
-  <g stroke="#FFFFFF" stroke-width="1" stroke-opacity=".75">
-    <polygon points="770,68 675,238 770,170" fill="url(#facet-0)"/>
-    <polygon points="770,68 770,170 865,238" fill="url(#facet-1)"/>
-    <polygon points="675,238 770,170 865,238" fill="url(#facet-2)"/>
+  <text id="t-role1" x="56" y="232" class="sans" font-size="30" font-weight="600" fill="#1C1530">Founder @ ShiftCodes</text>
+  <text id="t-role2" x="56" y="270" class="sans" font-size="22" fill="#5A5275">Systems Architect · Senior Full-Stack Engineer</text>
+  <g transform="translate(692.77 55) scale(0.470852)" fill="url(#logo)">
+<path id="sc-hook-top" d="M13.000,105.000 L44.000,76.000 L104.000,13.000 C111.248,5.390 128.059,-0.037 138.000,0.000 L405.000,1.000 L328.000,78.000 C326.519,79.481 325.094,80.000 323.000,80.000 L156.000,80.000 C149.354,80.000 144.699,81.301 140.000,86.000 L86.000,140.000 C73.276,152.724 72.376,171.724 77.000,188.000 L102.000,276.000 L11.000,192.000 C-7.587,174.843 -4.332,121.214 13.000,105.000 Z"/>
+<path id="sc-hook-bottom" d="M92.000,365.000 L262.000,364.000 C264.962,363.983 266.888,363.077 269.000,361.000 L329.000,302.000 C337.294,293.844 338.181,275.700 334.000,266.000 L284.000,150.000 L324.000,179.000 L389.000,238.000 C413.913,260.613 427.744,312.256 400.000,340.000 L304.000,436.000 C302.247,437.753 286.084,446.000 280.000,446.000 L6.000,446.000 L77.000,374.000 C81.253,369.687 85.410,365.039 92.000,365.000 Z"/>
+<path id="sc-lt" d="M166.229,200.613 L118.534,234.000 L166.229,267.387 A6.575,6.575 0 0 0 173.771,256.613 L141.466,234.000 L173.771,211.387 A6.575,6.575 0 0 0 166.229,200.613 Z"/>
+<path id="sc-slash" d="M212.931,190.001 L184.931,275.001 A6.390,6.390 0 0 0 197.069,278.999 L225.069,193.999 A6.390,6.390 0 0 0 212.931,190.001 Z"/>
+<path id="sc-gt" d="M233.282,211.445 L266.309,234.000 L233.282,256.555 A6.593,6.593 0 0 0 240.718,267.445 L289.691,234.000 L240.718,200.555 A6.593,6.593 0 0 0 233.282,211.445 Z"/>
   </g>
 </svg>
