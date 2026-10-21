@@ -23,3 +23,7 @@ Known/manual: profile bio still the old "# Hi there… 👋" text — gh token l
 - Live github.com/TPCT 1440px dark: 14/14 README images loaded (hero, typing, badges, marquee, 6 cards, stats, snake); violet snake renders.
 - 375px light: 14/14 loaded, scrollWidth 375.
 - Workflows: Snake 39540372991 green (output/snake-{dark,light}.svg 84,116 B each, < 150 KB); Profile assets 39540372967 green.
+
+## r5 (after T-010 Experience + Impact, commit c912098) — PASS
+- Live github.com/TPCT 1440px dark: 16/16 README images loaded incl. impact + experience (640px wide).
+- 375px light: 16/16 loaded, scrollWidth 375; experience card renders at 293px wide (body text ≈ 9–10px — readable but small; acceptable trade-off, alt text carries the full content).
