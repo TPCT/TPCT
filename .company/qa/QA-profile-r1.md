@@ -17,3 +17,9 @@ Known/manual: profile bio still the old "# Hi there… 👋" text — gh token l
 - Live github.com/TPCT 1440px dark: violet hero with ShiftCodes S mark, violet badges; 11/11 images loaded.
 - 375px light: light hero/S mark, 11/11 images loaded, scrollWidth 375 (no horizontal scroll).
 - Action run 39539711108 green (contributions=8753).
+
+## r4 (after T-008/T-009 motion, commit c6e7d36) — PASS
+- Local preview (python http.server + browser pane): typing line cycles phrases with caret; marquee scrolls; hero S mark animates in, complete afterwards; Codex Chrome check confirmed card/stats motion.
+- Live github.com/TPCT 1440px dark: 14/14 README images loaded (hero, typing, badges, marquee, 6 cards, stats, snake); violet snake renders.
+- 375px light: 14/14 loaded, scrollWidth 375.
+- Workflows: Snake 39540372991 green (output/snake-{dark,light}.svg 84,116 B each, < 150 KB); Profile assets 39540372967 green.
