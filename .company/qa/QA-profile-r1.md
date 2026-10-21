@@ -7,3 +7,8 @@ Eyes-on in the built-in browser against the live profile after commit b29b377 (+
 - An earlier transient "broken images" state was a browser-pane emulation artifact (all light images incl. unchanged hero; standalone decode OK; fine after reload).
 - Action "Profile assets": runs 39529653708, 39530081924, 39530411399 green; Summary: contributions=8672, public repos=83, stars=17 (Actions token sees the full calendar).
 Known/manual: profile bio still the old "# Hi there… 👋" text — gh token lacks `user` scope, so not changed.
+
+## r2 (after T-006 Prism alignment, commit 5167c28) — PASS
+- Live github.com/TPCT, 1440px dark: Prism hero (gradient name, glass prism + spectrum), new badge colors; 11/11 images loaded (naturalWidth>0).
+- Profile bio now: "Founder @shiftcodes · Systems Architect · Senior Full-Stack Engineer (Laravel · Python · Docker). Portfolio: tpct.github.io".
+- Action run 39535598683 green.
