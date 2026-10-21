@@ -5,6 +5,11 @@
   <img src="./assets/hero-light.svg" width="100%" alt="Islam Elsayed: Founder @ ShiftCodes, Systems Architect, Senior Full-Stack Engineer. Alexandria, Egypt.">
 </picture>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/typing-dark.svg">
+  <img src="./assets/typing-light.svg" width="100%" alt="Founder @ ShiftCodes · Systems Architect · Laravel · Python · Docker · I build ERP, LMS and gaming platforms">
+</picture>
+
 <br>
 
 **I design and build production systems that businesses run on every day:<br>ERP suites, learning and gaming platforms, and the automation behind them.**
@@ -26,6 +31,11 @@
 - I care about modular architecture, clean APIs, role-based access, and delivery pipelines that make shipping safe.
 
 ## Stack
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/stack-dark.svg">
+  <img src="./assets/stack-light.svg" width="100%" alt="Tech stack: PHP, Laravel, Filament, Livewire, Python, Django, FastAPI, TypeScript, React, Next.js, Node.js, Tailwind CSS, PostgreSQL, MySQL, Redis, Docker, Nginx, Linux, GitHub Actions">
+</picture>
 
 | Area | Tools |
 |---|---|
@@ -97,6 +107,11 @@ Most of my commercial work is private because it runs real client operations. Th
 </picture>
 
 <sub>Generated daily from the GitHub API by a workflow in this repository.</sub>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TPCT/TPCT/output/snake-dark.svg">
+  <img src="https://raw.githubusercontent.com/TPCT/TPCT/output/snake-light.svg" width="100%" alt="Contribution graph being eaten by a snake, in ShiftCodes violet.">
+</picture>
 
 ## Contact
 

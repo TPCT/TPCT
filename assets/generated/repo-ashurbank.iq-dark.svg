@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="500" height="200" viewBox="0 0 500 200" role="img">
 <title>ashurbank.iq: Bilingual bank website with a Filament CMS: roles and permissions, audit log, Excel import/export.</title>
+<style>
+.card-border { opacity: 0; }
+@media (prefers-reduced-motion: no-preference) {
+  .card-border { opacity: 1; animation: card-border 6s linear infinite; }
+  @keyframes card-border { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -100; } }
+}
+</style>
 <defs><linearGradient id="accent" gradientUnits="userSpaceOnUse" x1="24" y1="0" x2="56" y2="0"><stop offset="0%" stop-color="#C9B8FF"/><stop offset="50%" stop-color="#8A5BFF"/><stop offset="100%" stop-color="#8FA0FF"/></linearGradient></defs>
 <rect x="0.5" y="0.5" width="499" height="199" rx="16" fill="#1E1832" stroke="#3A3160"/>
 <rect x="24" y="24" width="32" height="4" rx="2" fill="url(#accent)"/>
 <text x="24" y="64" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="28" fill="#F3F0FF" font-weight="700">ashurbank.iq</text>
+<rect class="card-border" x="0.75" y="0.75" width="498.5" height="198.5" rx="16" fill="none" stroke="url(#accent)" stroke-width="1.5" pathLength="100" stroke-dasharray="18 82" style="animation-delay: -5s"/>
 <text x="24" y="100" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="20" fill="#ABA1CC">Bilingual bank website with a Filament</text>
 <text x="24" y="126" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="20" fill="#ABA1CC">CMS: roles and permissions, audit log,</text>
 <text x="24" y="152" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="20" fill="#ABA1CC">Excel import/export.</text>

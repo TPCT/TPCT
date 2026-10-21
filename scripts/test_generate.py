@@ -133,7 +133,50 @@ class GeneratorTests(unittest.TestCase):
                 self.assertEqual(root.attrib["viewBox"], f"0 0 {width} {height}")
                 self.assertNotIn("http", svg.replace("http://www.w3.org/2000/svg", ""))
                 self.assertEqual(svg, render())
+                self.assertLessEqual(len(svg.encode("utf-8")), 150_000)
                 self.assertTrue(svg.startswith('<?xml version="1.0" encoding="UTF-8"?>'))
+
+    def test_card_animation(self):
+        ns = {"svg": "http://www.w3.org/2000/svg"}
+        for theme in generate.THEMES:
+            for i, repo in enumerate(generate.FEATURED):
+                with self.subTest(theme=theme, repo=repo["name"]):
+                    root = ET.fromstring(generate.render_card(repo, self.data, theme))
+                    border = root.find("svg:rect[@class='card-border']", ns)
+                    self.assertEqual(border.attrib["pathLength"], "100")
+                    self.assertEqual(border.attrib["stroke-width"], "1.5")
+                    self.assertEqual(border.attrib["stroke"], "url(#accent)")
+                    self.assertEqual(border.attrib["stroke-dasharray"], "18 82")
+                    self.assertEqual(border.attrib["style"], f"animation-delay: -{i}s")
+                    css = root.find("svg:style", ns).text
+                    self.assertIn("@media (prefers-reduced-motion: no-preference)", css)
+                    self.assertIn("animation: card-border 6s linear infinite", css)
+                    self.assertIn("stroke-dashoffset: -100", css)
+                    self.assertIn(".card-border { opacity: 0; }", css)
+
+    def test_stats_animation(self):
+        ns = {"svg": "http://www.w3.org/2000/svg"}
+        for theme in generate.THEMES:
+            with self.subTest(theme=theme):
+                root = ET.fromstring(generate.render_stats(self.data, theme, TODAY))
+                css = root.find("svg:style", ns).text
+                self.assertIn("@media (prefers-reduced-motion: no-preference)", css)
+                self.assertIn("translateY(6px)", css)
+                self.assertIn("transform-origin: left; transform-box: fill-box", css)
+                self.assertIn("scaleX(0)", css)
+                for animation in ("stats-enter", "language-grow", "legend-enter"):
+                    self.assertIn(f"animation: {animation} 600ms ease-out backwards", css)
+                self.assertIn("animation: stats-shimmer 6s linear infinite", css)
+                metrics = root.findall("svg:g[@class='metric']", ns)
+                self.assertEqual([g.attrib["style"] for g in metrics],
+                                 [f"animation-delay: {i * 120}ms" for i in range(4)])
+                for metric in metrics:
+                    self.assertEqual(len(metric.findall("svg:text", ns)), 2)
+                segments = root.findall(".//svg:rect[@class='language-segment']", ns)
+                self.assertEqual(len(segments), len(generate.aggregate_languages(self.data["languages"])))
+                self.assertEqual([g.attrib["style"] for g in segments],
+                                 [f"animation-delay: {i * 120}ms" for i in range(len(segments))])
+                self.assertIsNotNone(root.find("svg:g[@class='legend']", ns))
 
     def test_stars_and_no_language(self):
         self.assertEqual(generate.render_card(generate.FEATURED[0], self.data, "dark").count("<polygon"), 1)
@@ -212,9 +255,11 @@ class GeneratorTests(unittest.TestCase):
                 self.assertEqual(generate.main(args), 0)
             self.assertEqual(len(list(Path(tmp).glob("*.svg"))), 14)
             self.assertIn("14 file(s) updated", output.getvalue())
+            first_run = {p.name: p.read_bytes() for p in Path(tmp).glob("*.svg")}
             with redirect_stdout(io.StringIO()) as output:
                 self.assertEqual(generate.main(args), 0)
             self.assertIn("0 file(s) updated", output.getvalue())
+            self.assertEqual(first_run, {p.name: p.read_bytes() for p in Path(tmp).glob("*.svg")})
 
     def test_main_failures_write_nothing(self):
         with tempfile.TemporaryDirectory() as tmp, redirect_stderr(io.StringIO()) as error:

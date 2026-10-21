@@ -10,10 +10,21 @@
     <radialGradient id="field-b"><stop stop-color="#DCE2FF" stop-opacity=".9"/><stop offset="1" stop-color="#DCE2FF" stop-opacity="0"/></radialGradient>
     <radialGradient id="glow-a"><stop stop-color="#6E2BFB" stop-opacity=".28"/><stop offset="1" stop-color="#6E2BFB" stop-opacity="0"/></radialGradient>
     <radialGradient id="glow-b"><stop stop-color="#3346C4" stop-opacity=".18"/><stop offset="1" stop-color="#3346C4" stop-opacity="0"/></radialGradient>
+    <clipPath id="mark-clip"><path d="M13.000,105.000 L44.000,76.000 L104.000,13.000 C111.248,5.390 128.059,-0.037 138.000,0.000 L405.000,1.000 L328.000,78.000 C326.519,79.481 325.094,80.000 323.000,80.000 L156.000,80.000 C149.354,80.000 144.699,81.301 140.000,86.000 L86.000,140.000 C73.276,152.724 72.376,171.724 77.000,188.000 L102.000,276.000 L11.000,192.000 C-7.587,174.843 -4.332,121.214 13.000,105.000 Z"/><path d="M92.000,365.000 L262.000,364.000 C264.962,363.983 266.888,363.077 269.000,361.000 L329.000,302.000 C337.294,293.844 338.181,275.700 334.000,266.000 L284.000,150.000 L324.000,179.000 L389.000,238.000 C413.913,260.613 427.744,312.256 400.000,340.000 L304.000,436.000 C302.247,437.753 286.084,446.000 280.000,446.000 L6.000,446.000 L77.000,374.000 C81.253,369.687 85.410,365.039 92.000,365.000 Z"/><path d="M166.229,200.613 L118.534,234.000 L166.229,267.387 A6.575,6.575 0 0 0 173.771,256.613 L141.466,234.000 L173.771,211.387 A6.575,6.575 0 0 0 166.229,200.613 Z"/><path d="M212.931,190.001 L184.931,275.001 A6.390,6.390 0 0 0 197.069,278.999 L225.069,193.999 A6.390,6.390 0 0 0 212.931,190.001 Z"/><path d="M233.282,211.445 L266.309,234.000 L233.282,256.555 A6.593,6.593 0 0 0 240.718,267.445 L289.691,234.000 L240.718,200.555 A6.593,6.593 0 0 0 233.282,211.445 Z"/></clipPath>
+    <clipPath id="rule-clip"><rect x="56" y="180" width="96" height="6" rx="3"/></clipPath>
+    <linearGradient id="shine"><stop stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".5" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
   </defs>
   <style>
     .sans { font-family: Outfit, 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .mark-sweep, .rule-shimmer { display: none; }
     @media (prefers-reduced-motion: no-preference) {
+      .mark-sweep, .rule-shimmer { display: inline; }
+      .mark-sweep { animation: sweep 6s ease-in-out 2.2s infinite both; }
+      .rule-shimmer { animation: shimmer 4s linear infinite; }
+      .mark-glow { transform-box: fill-box; transform-origin: center; animation: breathe 5s ease-in-out infinite alternate; }
+      @keyframes sweep { 0%, 55% { transform: translateX(-180px); } 90%, 100% { transform: translateX(600px); } }
+      @keyframes shimmer { from { transform: translateX(-48px); } to { transform: translateX(144px); } }
+      @keyframes breathe { from { opacity: .85; transform: scale(.85); } to { opacity: 1; transform: scale(1); } }
       #sc-hook-top, #sc-hook-bottom, #sc-lt, #sc-gt, #sc-slash { transform-box: fill-box; transform-origin: center; }
       #sc-hook-top { animation: top-in 900ms ease-out 350ms backwards, top-drift 7s ease-in-out 1950ms infinite alternate; }
       #sc-hook-bottom { animation: bottom-in 900ms ease-out 470ms backwards, bottom-drift 7s ease-in-out 1950ms infinite alternate; }
@@ -36,13 +47,14 @@
     <ellipse cx="180" cy="20" rx="500" ry="290" fill="url(#field-a)"/>
     <ellipse cx="920" cy="128" rx="500" ry="290" fill="url(#field-b)"/>
     <circle cx="790" cy="160" r="128" fill="#FCFBFF" stroke="#D8D1F0" stroke-opacity=".5"/>
-    <ellipse cx="755" cy="150" rx="155" ry="140" fill="url(#glow-a)"/>
-    <ellipse cx="840" cy="175" rx="150" ry="130" fill="url(#glow-b)"/>
+    <ellipse class="mark-glow" cx="755" cy="150" rx="155" ry="140" fill="url(#glow-a)"/>
+    <ellipse class="mark-glow" cx="840" cy="175" rx="150" ry="130" fill="url(#glow-b)"/>
   </g>
   <rect x=".5" y=".5" width="999" height="319" rx="20" fill="none" stroke="#D8D1F0"/>
   <text id="t-label" x="56" y="76" class="sans" font-size="16" font-weight="800" fill="#3346C4" letter-spacing="1.5">TPCT · ALEXANDRIA, EGYPT</text>
   <text id="t-name" x="56" y="156" class="sans" font-size="72" font-weight="800" fill="url(#accent)" letter-spacing="-1.5">Islam Elsayed</text>
   <rect x="56" y="180" width="96" height="6" rx="3" fill="url(#accent)"/>
+  <g clip-path="url(#rule-clip)"><rect class="rule-shimmer" x="56" y="180" width="48" height="6" fill="url(#shine)" opacity=".45"/></g>
   <text id="t-role1" x="56" y="232" class="sans" font-size="30" font-weight="600" fill="#1C1530">Founder @ ShiftCodes</text>
   <text id="t-role2" x="56" y="270" class="sans" font-size="22" fill="#5A5275">Systems Architect · Senior Full-Stack Engineer</text>
   <g transform="translate(692.77 55) scale(0.470852)" fill="url(#logo)">
@@ -51,5 +63,6 @@
 <path id="sc-lt" d="M166.229,200.613 L118.534,234.000 L166.229,267.387 A6.575,6.575 0 0 0 173.771,256.613 L141.466,234.000 L173.771,211.387 A6.575,6.575 0 0 0 166.229,200.613 Z"/>
 <path id="sc-slash" d="M212.931,190.001 L184.931,275.001 A6.390,6.390 0 0 0 197.069,278.999 L225.069,193.999 A6.390,6.390 0 0 0 212.931,190.001 Z"/>
 <path id="sc-gt" d="M233.282,211.445 L266.309,234.000 L233.282,256.555 A6.593,6.593 0 0 0 240.718,267.445 L289.691,234.000 L240.718,200.555 A6.593,6.593 0 0 0 233.282,211.445 Z"/>
+    <g clip-path="url(#mark-clip)"><path class="mark-sweep" d="M-100,-60 H-20 L180,506 H100 Z" fill="url(#shine)" opacity="0.45"/></g>
   </g>
 </svg>

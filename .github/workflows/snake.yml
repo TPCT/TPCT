@@ -1,0 +1,29 @@
+name: Snake
+on:
+  schedule: [{cron: "17 4 * * *"}]
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/snake.yml"]
+permissions:
+  contents: write
+concurrency: {group: snake, cancel-in-progress: true}
+jobs:
+  snake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-light.svg?color_snake=#6E2BFB&color_dots=#EAE5FA,#D9C9FF,#B9A2FF,#8A5BFF,#5A1FE0
+            dist/snake-dark.svg?color_snake=#B9A2FF&color_dots=#1E1832,#3B1E86,#5A1FE0,#8A5BFF,#C9B8FF
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+          keep_history: true
+          jekyll: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

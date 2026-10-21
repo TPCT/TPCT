@@ -166,7 +166,16 @@ def render_card(repo: dict, data: dict, theme: str) -> str:
     lines = wrap_card_description(repo["description"])
     item = data["featured"][name]
     parts = _svg(500, 200, f'{name}: {repo["description"]}')
+    index = next((i for i, featured in enumerate(FEATURED) if featured["name"] == name), 0)
+    parts.append("""<style>
+.card-border { opacity: 0; }
+@media (prefers-reduced-motion: no-preference) {
+  .card-border { opacity: 1; animation: card-border 6s linear infinite; }
+  @keyframes card-border { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -100; } }
+}
+</style>""")
     parts.extend([_accent(colors), f'<rect x="0.5" y="0.5" width="499" height="199" rx="16" fill="{colors["surface"]}" stroke="{colors["border"]}"/>', '<rect x="24" y="24" width="32" height="4" rx="2" fill="url(#accent)"/>', _text(24, 64, name, 28, colors["text"], extra=' font-weight="700"')])
+    parts.append(f'<rect class="card-border" x="0.75" y="0.75" width="498.5" height="198.5" rx="16" fill="none" stroke="url(#accent)" stroke-width="1.5" pathLength="100" stroke-dasharray="18 82" style="animation-delay: -{index}s"/>')
     for i, line in enumerate(lines):
         parts.append(_text(24, 100 + i * 26, line, 20, colors["muted"]))
     language = repo.get("language", item["language"])
@@ -193,27 +202,45 @@ def render_stats(data: dict, theme: str, today: date) -> str:
     colors = THEMES[theme]
     parts = _svg(1000, 320, f'GitHub stats for {data["login"]}')
     parts.extend([_accent(colors, 40, 960), f'<rect x="0.5" y="0.5" width="999" height="319" rx="20" fill="{colors["bg"]}" stroke="{colors["border"]}"/>', _text(40, 52, "GITHUB ACTIVITY", 16, colors["cyan"], extra=' font-weight="800" letter-spacing="1.5"')])
+    parts.append("""<style>
+.stats-shimmer { opacity: 0; }
+@media (prefers-reduced-motion: no-preference) {
+  .metric { animation: stats-enter 600ms ease-out backwards; }
+  .language-segment { transform-origin: left; transform-box: fill-box; animation: language-grow 600ms ease-out backwards; }
+  .legend { animation: legend-enter 600ms ease-out backwards; }
+  .stats-shimmer { opacity: 1; animation: stats-shimmer 6s linear infinite; }
+  @keyframes stats-enter { from { transform: translateY(6px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+  @keyframes language-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  @keyframes legend-enter { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes stats-shimmer { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -100; } }
+}
+</style>""")
     metrics = [(data["contributions_last_year"], "Contributions (12 mo)"), (data["public_repos"], "Public repositories"), (data["total_stars"], "Stars earned"), (years_on_github(data["created_at"], today), "Years on GitHub")]
-    for x, (value, label) in zip((40, 270, 500, 730), metrics):
+    for i, (x, (value, label)) in enumerate(zip((40, 270, 500, 730), metrics)):
+        parts.append(f'<g class="metric" style="animation-delay: {i * 120}ms">')
         parts.extend([_text(x, 118, f"{value:,}", 44, colors["text"], extra=' font-weight="800"'), _text(x, 148, label, 17, colors["muted"])])
+        parts.append('</g>')
+    parts.append('<line class="stats-shimmer" x1="40" y1="176" x2="960" y2="176" stroke="url(#accent)" stroke-width="2" pathLength="100" stroke-dasharray="18 82"/>')
     parts.extend([f'<line x1="40" y1="176" x2="960" y2="176" stroke="url(#accent)"/>', _text(40, 208, "TOP LANGUAGES · BY CODE SIZE", 14, colors["cyan"], extra=' font-weight="800" letter-spacing="1.5"')])
     languages = aggregate_languages(data["languages"])
     if languages:
         parts.extend(['<defs><clipPath id="languages"><rect x="40" y="222" width="920" height="12" rx="6"/></clipPath></defs>', '<g clip-path="url(#languages)">'])
         x = 40.0
         separators = []
-        for name, pct, color in languages:
+        for i, (name, pct, color) in enumerate(languages):
             width = max(2, 920 * pct / 100)
-            parts.append(f'<rect x="{x:.6f}" y="222" width="{width:.6f}" height="12" fill="{_escape(color or colors["muted"])}"/>')
+            parts.append(f'<rect class="language-segment" style="animation-delay: {i * 120}ms" x="{x:.6f}" y="222" width="{width:.6f}" height="12" fill="{_escape(color or colors["muted"])}"/>')
             x += 920 * pct / 100
             separators.append(x)
         for x in separators[:-1]:
             parts.append(f'<line x1="{x:.6f}" y1="222" x2="{x:.6f}" y2="234" stroke="{colors["bg"]}" stroke-width="2"/>')
         parts.append('</g>')
+        parts.append('<g class="legend" style="animation-delay: 480ms">')
         for i, (name, pct, color) in enumerate(languages):
             x, y = (40, 270, 500, 730)[i % 4], 270 + 28 * (i // 4)
             parts.append(f'<circle cx="{x + 5}" cy="{y - 5}" r="5" fill="{_escape(color or colors["muted"])}"/>')
             parts.append(f'<text x="{x + 18}" y="{y}" font-family="{_escape(SANS)}" font-size="16" fill="{colors["text"]}">{_escape(name)} <tspan fill="{colors["muted"]}">{pct:.1f}%</tspan></text>')
+        parts.append('</g>')
     return "\n".join(parts + ["</svg>", ""])
 
 
