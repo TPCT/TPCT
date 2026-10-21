@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="200" viewBox="0 0 500 200" role="img">
+<title>social-media-scheduler: Laravel app that schedules and auto-publishes posts across social platforms, with analytics.</title>
+<defs><linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#7C3AED"/><stop offset="100%" stop-color="#4F46E5"/></linearGradient></defs>
+<rect x="0.5" y="0.5" width="499" height="199" rx="16" fill="#12151C" stroke="#232836"/>
+<rect x="24" y="24" width="32" height="4" rx="2" fill="url(#accent)"/>
+<text x="24" y="64" font-family="-apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="26" fill="#E6E8EE" font-weight="700">social-media-scheduler</text>
+<text x="24" y="100" font-family="-apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="19" fill="#8B93A7">Laravel app that schedules and</text>
+<text x="24" y="126" font-family="-apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="19" fill="#8B93A7">auto-publishes posts across social</text>
+<text x="24" y="152" font-family="-apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="19" fill="#8B93A7">platforms, with analytics.</text>
+<circle cx="30" cy="176" r="6" fill="#4F5D95"/>
+<text x="44" y="182" font-family="-apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="17" fill="#8B93A7">PHP</text>
+<text x="476" y="182" font-family="ui-monospace, SFMono-Regular, &#x27;SF Mono&#x27;, Menlo, Consolas, &#x27;Liberation Mono&#x27;, monospace" font-size="15" fill="#22D3EE" text-anchor="end" font-weight="600" letter-spacing="1">LARAVEL</text>
+</svg>

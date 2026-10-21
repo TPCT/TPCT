@@ -1,0 +1,81 @@
+{
+  "contributions_last_year": 8667,
+  "created_at": "2016-05-27T01:13:01Z",
+  "featured": {
+    "Egyptian-National-ID": {
+      "language": "Python",
+      "language_color": "#3572A5",
+      "stars": 0
+    },
+    "JenDock": {
+      "language": "Python",
+      "language_color": "#3572A5",
+      "stars": 1
+    },
+    "order-payment-api": {
+      "language": "PHP",
+      "language_color": "#4F5D95",
+      "stars": 0
+    },
+    "palm-resources-01": {
+      "language": "TypeScript",
+      "language_color": "#3178c6",
+      "stars": 0
+    },
+    "social-media-scheduler": {
+      "language": "PHP",
+      "language_color": "#4F5D95",
+      "stars": 0
+    },
+    "tpct-mac-theme": {
+      "language": "JavaScript",
+      "language_color": "#f1e05a",
+      "stars": 0
+    }
+  },
+  "languages": {
+    "Blade": {
+      "color": "#f7523f",
+      "size": 900000
+    },
+    "C#": {
+      "color": "#178600",
+      "size": 600000
+    },
+    "CSS": {
+      "color": "#663399",
+      "size": 1000000
+    },
+    "HTML": {
+      "color": "#e34c26",
+      "size": 2000000
+    },
+    "JavaScript": {
+      "color": "#f1e05a",
+      "size": 2100000
+    },
+    "PHP": {
+      "color": "#4F5D95",
+      "size": 9100000
+    },
+    "Python": {
+      "color": "#3572A5",
+      "size": 4200000
+    },
+    "Shell": {
+      "color": "#89e051",
+      "size": 300000
+    },
+    "TypeScript": {
+      "color": "#3178c6",
+      "size": 2800000
+    },
+    "Vue": {
+      "color": "#41b883",
+      "size": 150000
+    }
+  },
+  "login": "TPCT",
+  "public_repos": 83,
+  "total_stars": 17
+}

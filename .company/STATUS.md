@@ -3,7 +3,7 @@
 | Ticket | Title | State | Depends on | Parallel |
 |---|---|---|---|---|
 | T-001 | Hero SVG (dark + light) | done | none | yes, with T-002 |
-| T-002 | Stats + repo-card generator and daily Action | todo | none | yes, with T-001 |
+| T-002 | Stats + repo-card generator and daily Action | done | none | yes, with T-001 |
 | T-003 | Rewrite README.md and remove old assets | todo | T-001, T-002, plus the real generation run by the orchestrator | no |
 
 Orchestrator step between T-002 and T-003: `cd /home/tpct/TPCT-profile && GITHUB_TOKEN=$(gh auth token) python3 scripts/generate.py`
@@ -23,3 +23,4 @@ Orchestrator step between T-002 and T-003: `cd /home/tpct/TPCT-profile && GITHUB
 - 2026-10-21 UX: Repo cards hide the star count when it is 0. Stats show contributions (12 mo), public repos, stars earned, years on GitHub, and the top 6 languages excluding markup/config.
 - 2026-10-21 UX: The hero has no avatar/photo and no section dividers. Its only animation is one cyan dot pulse, disabled under prefers-reduced-motion.
 - 2026-10-21 TL: All 12 old assets (v3/v4/v5, profile-hero, impact, capabilities) are deleted in T-003.
+- 2026-10-21 TL: T-002 review suggestion #1 (guard commit step to main) folded into T-003 as a small addendum.
