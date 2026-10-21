@@ -15,19 +15,19 @@
 <text x="40" y="208" font-family="ui-monospace, SFMono-Regular, &#x27;SF Mono&#x27;, Menlo, Consolas, &#x27;Liberation Mono&#x27;, monospace" font-size="14" fill="#5B6478" font-weight="600" letter-spacing="2">TOP LANGUAGES · BY CODE SIZE</text>
 <defs><clipPath id="languages"><rect x="40" y="222" width="920" height="12" rx="6"/></clipPath></defs>
 <g clip-path="url(#languages)">
-<rect x="40.000000" y="222" width="501.792342" height="12" fill="#f1e05a"/>
-<rect x="541.792342" y="222" width="355.567427" height="12" fill="#4F5D95"/>
-<rect x="897.359769" y="222" width="34.231572" height="12" fill="#3572A5"/>
-<rect x="931.591341" y="222" width="15.007607" height="12" fill="#f7523f"/>
-<rect x="946.598948" y="222" width="9.987752" height="12" fill="#3178c6"/>
-<rect x="956.586700" y="222" width="2.000000" height="12" fill="#89e051"/>
-<rect x="958.191295" y="222" width="2.000000" height="12" fill="#5B6478"/>
-<line x1="541.792342" y1="222" x2="541.792342" y2="234" stroke="#FFFFFF" stroke-width="2"/>
-<line x1="897.359769" y1="222" x2="897.359769" y2="234" stroke="#FFFFFF" stroke-width="2"/>
-<line x1="931.591341" y1="222" x2="931.591341" y2="234" stroke="#FFFFFF" stroke-width="2"/>
-<line x1="946.598948" y1="222" x2="946.598948" y2="234" stroke="#FFFFFF" stroke-width="2"/>
-<line x1="956.586700" y1="222" x2="956.586700" y2="234" stroke="#FFFFFF" stroke-width="2"/>
-<line x1="958.191295" y1="222" x2="958.191295" y2="234" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="40.000000" y="222" width="501.784304" height="12" fill="#f1e05a"/>
+<rect x="541.784304" y="222" width="355.561731" height="12" fill="#4F5D95"/>
+<rect x="897.346035" y="222" width="34.245761" height="12" fill="#3572A5"/>
+<rect x="931.591796" y="222" width="15.007366" height="12" fill="#f7523f"/>
+<rect x="946.599163" y="222" width="9.987592" height="12" fill="#3178c6"/>
+<rect x="956.586755" y="222" width="2.000000" height="12" fill="#89e051"/>
+<rect x="958.191324" y="222" width="2.000000" height="12" fill="#5B6478"/>
+<line x1="541.784304" y1="222" x2="541.784304" y2="234" stroke="#FFFFFF" stroke-width="2"/>
+<line x1="897.346035" y1="222" x2="897.346035" y2="234" stroke="#FFFFFF" stroke-width="2"/>
+<line x1="931.591796" y1="222" x2="931.591796" y2="234" stroke="#FFFFFF" stroke-width="2"/>
+<line x1="946.599163" y1="222" x2="946.599163" y2="234" stroke="#FFFFFF" stroke-width="2"/>
+<line x1="956.586755" y1="222" x2="956.586755" y2="234" stroke="#FFFFFF" stroke-width="2"/>
+<line x1="958.191324" y1="222" x2="958.191324" y2="234" stroke="#FFFFFF" stroke-width="2"/>
 </g>
 <circle cx="45" cy="265" r="5" fill="#f1e05a"/>
 <text x="58" y="270" font-family="-apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="16" fill="#0F1222">JavaScript <tspan fill="#5B6478">54.5%</tspan></text>
