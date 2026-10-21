@@ -20,7 +20,7 @@ FEATURED = [
     {"name": "Egyptian-National-ID", "tag": "DJANGO REST", "description": "Django REST API that validates Egyptian national IDs and extracts birth date, gender, region."},
     {"name": "order-payment-api", "tag": "LARAVEL · JWT", "description": "Laravel REST API for users, products, orders and payments, secured with JWT."},
     {"name": "social-media-scheduler", "tag": "LARAVEL", "description": "Laravel app that schedules and auto-publishes posts across social platforms, with analytics."},
-    {"name": "palm-resources-01", "tag": "FIREBASE", "description": "Idempotent exercise-session ingest on Firebase Functions and Firestore, in TypeScript."},
+    {"name": "ashurbank.iq", "tag": "LARAVEL · FILAMENT", "description": "Bilingual bank website with a Filament CMS: roles and permissions, audit log, Excel import/export.", "language": "PHP"},
 ]
 EXCLUDED_LANGUAGES = {"HTML", "CSS", "SCSS", "Less", "Jupyter Notebook", "Makefile", "Dockerfile", "Procfile", "Batchfile"}
 TOP_LANGUAGES = 6
@@ -167,9 +167,12 @@ def render_card(repo: dict, data: dict, theme: str) -> str:
     parts.extend([f'<defs><linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="{ACCENT[0]}"/><stop offset="100%" stop-color="{ACCENT[1]}"/></linearGradient></defs>', f'<rect x="0.5" y="0.5" width="499" height="199" rx="16" fill="{colors["surface"]}" stroke="{colors["border"]}"/>', '<rect x="24" y="24" width="32" height="4" rx="2" fill="url(#accent)"/>', _text(24, 64, name, 28, colors["text"], extra=' font-weight="700"')])
     for i, line in enumerate(lines):
         parts.append(_text(24, 100 + i * 26, line, 20, colors["muted"]))
-    language = item["language"]
+    language = repo.get("language", item["language"])
+    language_color = item["language_color"]
+    if "language" in repo:
+        language_color = "#4F5D95" if language == "PHP" else data["languages"].get(language, {}).get("color")
     if language:
-        parts.append(f'<circle cx="30" cy="176" r="6" fill="{_escape(item["language_color"] or colors["muted"])}"/>')
+        parts.append(f'<circle cx="30" cy="176" r="6" fill="{_escape(language_color or colors["muted"])}"/>')
         parts.append(_text(44, 182, language, 17, colors["muted"]))
     if item["stars"] >= 1:
         cx = 44 + text_width(language, 17) + 22 if language else 30

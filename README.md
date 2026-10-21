@@ -13,7 +13,7 @@
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-tpct.github.io-7C3AED?style=for-the-badge&logo=githubpages&logoColor=white)](https://tpct.github.io)
 [![ShiftCodes](https://img.shields.io/badge/ShiftCodes-shiftcodes.net-4F46E5?style=for-the-badge&logo=googlechrome&logoColor=white)](https://shiftcodes.net)
-[![Email](https://img.shields.io/badge/Email-eslamjackie%40outlook.com-12151C?style=for-the-badge&logo=microsoftoutlook&logoColor=white)](mailto:eslamjackie@outlook.com)
+[![Email](https://img.shields.io/badge/Email-th3professionalcod3r%40gmail.com-12151C?style=for-the-badge&logo=gmail&logoColor=white)](mailto:th3professionalcod3r@gmail.com)
 
 <sub>Case studies and full project history live on the portfolio: <a href="https://tpct.github.io"><b>tpct.github.io</b></a></sub>
 
@@ -43,7 +43,7 @@
   <a href="https://github.com/TPCT/Egyptian-National-ID"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/generated/repo-Egyptian-National-ID-dark.svg"><img src="./assets/generated/repo-Egyptian-National-ID-light.svg" width="380" alt="Egyptian-National-ID: Django REST API that validates Egyptian national IDs and extracts birth date, gender, region."></picture></a>
   <a href="https://github.com/TPCT/order-payment-api"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/generated/repo-order-payment-api-dark.svg"><img src="./assets/generated/repo-order-payment-api-light.svg" width="380" alt="order-payment-api: Laravel REST API for users, products, orders and payments, secured with JWT."></picture></a>
   <a href="https://github.com/TPCT/social-media-scheduler"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/generated/repo-social-media-scheduler-dark.svg"><img src="./assets/generated/repo-social-media-scheduler-light.svg" width="380" alt="social-media-scheduler: Laravel app that schedules and auto-publishes posts across social platforms, with analytics."></picture></a>
-  <a href="https://github.com/TPCT/palm-resources-01"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/generated/repo-palm-resources-01-dark.svg"><img src="./assets/generated/repo-palm-resources-01-light.svg" width="380" alt="palm-resources-01: Idempotent exercise-session ingest on Firebase Functions and Firestore, in TypeScript."></picture></a>
+  <a href="https://github.com/TPCT/ashurbank.iq"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/generated/repo-ashurbank.iq-dark.svg"><img src="./assets/generated/repo-ashurbank.iq-light.svg" width="380" alt="ashurbank.iq: Bilingual bank website with a Filament CMS: roles and permissions, audit log, Excel import/export."></picture></a>
 </p>
 
 ## Selected private work
@@ -102,4 +102,4 @@ Most of my commercial work is private because it runs real client operations. Th
 
 Open to architecture work, platform builds and technical partnerships.
 
-**Email** [eslamjackie@outlook.com](mailto:eslamjackie@outlook.com) · **Studio** [shiftcodes.net](https://shiftcodes.net) · **Portfolio** [tpct.github.io](https://tpct.github.io)
+**Email** [th3professionalcod3r@gmail.com](mailto:th3professionalcod3r@gmail.com) · **Studio** [shiftcodes.net](https://shiftcodes.net) · **Portfolio** [tpct.github.io](https://tpct.github.io)

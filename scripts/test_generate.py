@@ -103,6 +103,22 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn("<circle", svg)
         self.assertNotIn(">Python<", svg)
 
+    def test_card_language_override(self):
+        repo = generate.FEATURED[5]
+        self.assertEqual(repo["name"], "ashurbank.iq")
+        for theme in generate.THEMES:
+            with self.subTest(theme=theme):
+                svg = generate.render_card(repo, self.data, theme)
+                self.assertIn(">PHP<", svg)
+                self.assertIn('fill="#4F5D95"', svg)
+                self.assertNotIn(">JavaScript<", svg)
+                self.assertNotIn('fill="#f1e05a"', svg)
+                without_override = dict(repo)
+                del without_override["language"]
+                svg = generate.render_card(without_override, self.data, theme)
+                self.assertIn(">JavaScript<", svg)
+                self.assertIn('fill="#f1e05a"', svg)
+
     def test_escaping(self):
         repo = dict(generate.FEATURED[0], description='Use & compare <values> "safely"')
         svg = generate.render_card(repo, self.data, "light")

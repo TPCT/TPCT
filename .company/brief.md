@@ -5,7 +5,7 @@ consistent with the new portfolio at https://tpct.github.io (built in parallel b
 
 ## Who
 Islam Elsayed (GitHub: TPCT) — Founder @ ShiftCodes, Systems Architect / Senior Full-Stack Engineer, Alexandria, Egypt.
-Contact: eslamjackie@outlook.com · https://shiftcodes.net · portfolio https://tpct.github.io
+Contact: th3professionalcod3r@gmail.com · https://shiftcodes.net · portfolio https://tpct.github.io
 
 ## Must have
 1. Hero (name, role, one-line positioning) + prominent link to the portfolio, plus ShiftCodes and email CTAs.
