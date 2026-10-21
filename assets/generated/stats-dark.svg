@@ -4,7 +4,7 @@
 <defs><linearGradient id="accent" gradientUnits="userSpaceOnUse" x1="40" y1="0" x2="960" y2="0"><stop offset="0%" stop-color="#F299C4"/><stop offset="55%" stop-color="#C3AEF5"/><stop offset="100%" stop-color="#7FD3E3"/></linearGradient></defs>
 <rect x="0.5" y="0.5" width="999" height="319" rx="20" fill="#2B2638" stroke="#4A4159"/>
 <text x="40" y="52" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="16" fill="#7FD3E3" font-weight="800" letter-spacing="1.5">GITHUB ACTIVITY</text>
-<text x="40" y="118" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="44" fill="#F1ECF8" font-weight="800">8,685</text>
+<text x="40" y="118" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="44" fill="#F1ECF8" font-weight="800">8,749</text>
 <text x="40" y="148" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="17" fill="#B7ACC6">Contributions (12 mo)</text>
 <text x="270" y="118" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="44" fill="#F1ECF8" font-weight="800">84</text>
 <text x="270" y="148" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="17" fill="#B7ACC6">Public repositories</text>
