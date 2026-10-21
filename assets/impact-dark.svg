@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="340" viewBox="0 0 640 340" role="img" aria-labelledby="title desc">
+<title id="title">Production software impact</title>
+<desc id="desc">Nine-plus years shipping software, about 250 freelance projects, faster Oracle queries and lower server costs.</desc>
+<defs>
+<linearGradient id="accent"><stop stop-color="#C9B8FF"/><stop offset="50%" stop-color="#8A5BFF"/><stop offset="100%" stop-color="#8FA0FF"/></linearGradient>
+<radialGradient id="field"><stop stop-color="#2A1A55"/><stop offset="1" stop-color="#1E1832" stop-opacity="0"/></radialGradient>
+<clipPath id="card"><rect x="1" y="1" width="638" height="338" rx="20"/></clipPath>
+</defs>
+<style>
+text { font-family: Outfit, 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+.label { font-size: 16px; font-weight: 800; letter-spacing: 1.5px; fill: #8FA0FF; }
+</style>
+<rect x="0.5" y="0.5" width="639" height="339" rx="20" fill="#1E1832" stroke="#3A3160"/>
+<ellipse cx="510" cy="80" rx="290" ry="180" fill="url(#field)" clip-path="url(#card)"/>
+<text class="label" x="24" y="34">IMPACT</text>
+<defs><linearGradient id="sheen"><stop stop-color="#FFFFFF" stop-opacity="0"/><stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.08"/><stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient></defs>
+<style>
+.sheen { opacity: 0; }
+@media (prefers-reduced-motion: no-preference) {
+.tile { animation: enter 600ms ease-out backwards; }
+.after { animation: appear 400ms ease-out backwards; }
+.sheen { opacity: 1; animation: sweep 7s linear infinite backwards; }
+@keyframes enter { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes appear { from { opacity: 0; } to { opacity: 1; } }
+@keyframes sweep { 0% { transform: translateX(-160px); } 35%, 100% { transform: translateX(800px); } }
+}
+</style>
+<g class="tile" style="animation-delay: 0ms">
+<rect x="24" y="52" width="288" height="124" rx="14" fill="#2A1A55" fill-opacity="0.35" stroke="#3A3160"/>
+<text x="36" y="100" font-size="46" font-weight="800" fill="url(#accent)">9+ yrs</text>
+<text x="36" y="131" font-size="20" fill="#ABA1CC">shipping production</text>
+<text x="36" y="155" font-size="20" fill="#ABA1CC">software since 2017</text>
+</g>
+<g class="tile" style="animation-delay: 120ms">
+<rect x="328" y="52" width="288" height="124" rx="14" fill="#2A1A55" fill-opacity="0.35" stroke="#3A3160"/>
+<text x="340" y="100" font-size="46" font-weight="800" fill="url(#accent)">~250</text>
+<text x="340" y="131" font-size="20" fill="#ABA1CC">freelance projects</text>
+<text x="340" y="155" font-size="20" fill="#ABA1CC">delivered</text>
+</g>
+<g class="tile" style="animation-delay: 240ms">
+<rect x="24" y="192" width="288" height="124" rx="14" fill="#2A1A55" fill-opacity="0.35" stroke="#3A3160"/>
+<text x="36" y="240" font-size="40" font-weight="800" fill="url(#accent)">3 s → <tspan class="after" style="animation-delay: 540ms">500 ms</tspan></text>
+<text x="36" y="271" font-size="20" fill="#ABA1CC">Oracle queries on</text>
+<text x="36" y="295" font-size="20" fill="#ABA1CC">100M+ rows (Kearney)</text>
+</g>
+<g class="tile" style="animation-delay: 360ms">
+<rect x="328" y="192" width="288" height="124" rx="14" fill="#2A1A55" fill-opacity="0.35" stroke="#3A3160"/>
+<text x="340" y="240" font-size="46" font-weight="800" fill="url(#accent)">$15k → <tspan class="after" style="animation-delay: 660ms">$2k</tspan></text>
+<text x="340" y="271" font-size="20" fill="#ABA1CC">server costs cut after</text>
+<text x="340" y="295" font-size="20" fill="#ABA1CC">re-architecture (IPXBit)</text>
+</g>
+<g clip-path="url(#card)"><rect class="sheen" x="0" y="1" width="140" height="338" fill="url(#sheen)"/></g>
+</svg>

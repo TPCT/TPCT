@@ -11,6 +11,7 @@
 | T-007 | Re-align with ShiftCodes brand (violet + animated S logo) | done | T-006 | no |
 | T-008 | Animated hero sweep, typing line, stack marquee, snake in README | done | T-007 | yes, with T-009 |
 | T-009 | Animated card borders + stats, snake workflow | done | T-007 | yes, with T-008 |
+| T-010 | Animated Experience timeline + impact numbers | done | T-009 | no |
 
 Orchestrator step between T-002 and T-003: `cd /home/tpct/TPCT-profile && GITHUB_TOKEN=$(gh auth token) python3 scripts/generate.py`
 (writes `assets/generated/*.svg`), then commit + push.
@@ -39,3 +40,5 @@ Orchestrator step between T-002 and T-003: `cd /home/tpct/TPCT-profile && GITHUB
 - 2026-10-21 Coordinator: user rejected berry Prism palette; brand = ShiftCodes logo violet #6E2BFB + animated S mark. Waited for portfolio T-009 (5711046), tokens/mark copied from it → T-007.
 - 2026-10-21 Coordinator: owner wants more animation → T-008 (hand-made SVGs + README) and T-009 (generator + snake workflow) in parallel, disjoint files. Snake via Platane/snk/svg-only@v3 → output branch (crazy-max/ghaction-github-pages@v4).
 - 2026-10-21 Review T-009: snake.yml keep_history set to true (no force-push to output branch, per global never-force-push rule).
+- 2026-10-21 Coordinator: owner supplied experience (portfolio .company/private/experience.md) → T-010. UX: 640-wide viewBox rendered at width=640 so text stays legible on phones (×0.53).
+- 2026-10-21 Review T-010: orchestrator applied 2 wording-only fixes (alt text order; dropped 'monthly' — not in source facts).

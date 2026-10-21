@@ -30,6 +30,25 @@
 - Systems architect and senior full-stack engineer: Laravel and Python at the core, Docker and Linux on the server.
 - I care about modular architecture, clean APIs, role-based access, and delivery pipelines that make shipping safe.
 
+## Experience
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/impact-dark.svg">
+    <img src="./assets/impact-light.svg" width="640" alt="Impact: 9+ years shipping production software; about 250 freelance projects; Oracle queries from 3 s to 500 ms on 100M+ rows; server costs from $15k to $2k.">
+  </picture>
+</p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/experience-dark.svg">
+    <img src="./assets/experience-light.svg" width="640" alt="Experience: CEO at ShiftCodes; Senior Technical Team Lead and Consultant at Monglish International Academy and at Edulixa360 (2026 to now). Previously Senior Software Engineer at Everything To Gain, Senior Software Engineer at Kearney, CTO at IPXBit, Team Lead at dot.jo, CTO at Venu Dine.">
+  </picture>
+</p>
+
+<p align="center">
+  <sub>Full history and case studies on <a href="https://tpct.github.io"><b>tpct.github.io</b></a></sub>
+</p>
+
 ## Stack
 
 <picture>

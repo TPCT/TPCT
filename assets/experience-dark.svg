@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="802" viewBox="0 0 640 802" role="img" aria-labelledby="title desc">
+<title id="title">Professional experience</title>
+<desc id="desc">Current leadership roles and five previous engineering roles, with selected achievements.</desc>
+<defs>
+<linearGradient id="accent"><stop stop-color="#C9B8FF"/><stop offset="50%" stop-color="#8A5BFF"/><stop offset="100%" stop-color="#8FA0FF"/></linearGradient>
+<radialGradient id="field"><stop stop-color="#2A1A55"/><stop offset="1" stop-color="#1E1832" stop-opacity="0"/></radialGradient>
+<clipPath id="card"><rect x="1" y="1" width="638" height="800" rx="20"/></clipPath>
+</defs>
+<style>
+text { font-family: Outfit, 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+.label { font-size: 16px; font-weight: 800; letter-spacing: 1.5px; fill: #8FA0FF; }
+</style>
+<rect x="0.5" y="0.5" width="639" height="801" rx="20" fill="#1E1832" stroke="#3A3160"/>
+<ellipse cx="510" cy="80" rx="290" ry="180" fill="url(#field)" clip-path="url(#card)"/>
+<text class="label" x="24" y="34">EXPERIENCE</text>
+<style>
+@media (prefers-reduced-motion: no-preference) {
+.draw { stroke-dasharray: 100 100; stroke-dashoffset: 0; animation: draw 1.6s ease-out backwards; }
+.entry { animation: enter 500ms ease-out backwards; }
+.ring { transform-box: fill-box; transform-origin: center; animation: pulse 2.4s ease-in-out infinite backwards; }
+@keyframes draw { from { stroke-dashoffset: 100; } to { stroke-dashoffset: 0; } }
+@keyframes enter { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes pulse { 0%, 100% { opacity: 0.25; transform: scale(1); } 50% { opacity: 0.65; transform: scale(1.3); } }
+}
+</style>
+<text class="label" x="60" y="85">NOW</text>
+<path d="M36 112 V272" stroke="#3A3160" stroke-width="2"/>
+<path class="draw" d="M36 112 V272" stroke="url(#accent)" stroke-width="2" pathLength="100"/>
+<path d="M36 406 V726" stroke="#3A3160" stroke-width="2"/>
+<path class="draw" d="M36 406 V726" stroke="url(#accent)" stroke-width="2" pathLength="100"/>
+<g class="entry" style="animation-delay: 1600ms">
+<circle class="ring" cx="36" cy="112" r="10" fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.35"/>
+<circle cx="36" cy="112" r="5" fill="url(#accent)"/>
+<text x="60" y="118" font-size="21" font-weight="700" fill="#F3F0FF">CEO</text>
+<text x="60" y="142" font-size="17" font-weight="400" fill="#8FA0FF">ShiftCodes Digital Technologies · 2026 – now</text>
+<text x="60" y="167" font-size="20" font-weight="400" fill="#ABA1CC">Software studio for business platforms</text>
+</g>
+<g class="entry" style="animation-delay: 1690ms">
+<circle class="ring" cx="36" cy="192" r="10" fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.35"/>
+<circle cx="36" cy="192" r="5" fill="url(#accent)"/>
+<text x="60" y="198" font-size="21" font-weight="700" fill="#F3F0FF">Sr. Technical Team Lead &amp; Consultant</text>
+<text x="60" y="222" font-size="17" font-weight="400" fill="#8FA0FF">Monglish International Academy · 2026 – now</text>
+<text x="60" y="247" font-size="20" font-weight="400" fill="#ABA1CC">Technical leadership for academy platforms</text>
+</g>
+<g class="entry" style="animation-delay: 1780ms">
+<circle class="ring" cx="36" cy="272" r="10" fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.35"/>
+<circle cx="36" cy="272" r="5" fill="url(#accent)"/>
+<text x="60" y="278" font-size="21" font-weight="700" fill="#F3F0FF">Sr. Technical Team Lead &amp; Consultant</text>
+<text x="60" y="302" font-size="17" font-weight="400" fill="#8FA0FF">Edulixa360 · 2026 – now</text>
+<text x="60" y="327" font-size="20" font-weight="400" fill="#ABA1CC">Leading the EdTech engineering team</text>
+</g>
+<text class="label" x="60" y="369">PREVIOUSLY</text>
+<g class="entry" style="animation-delay: 1870ms">
+<circle cx="36" cy="406" r="5" fill="url(#accent)"/>
+<text x="60" y="412" font-size="21" font-weight="700" fill="#F3F0FF">Senior Software Engineer</text>
+<text x="60" y="436" font-size="17" font-weight="400" fill="#8FA0FF">Everything To Gain · 2025 – 2026</text>
+<text x="60" y="461" font-size="20" font-weight="400" fill="#ABA1CC">Multi-tenant Laravel/FastAPI/.NET apps</text>
+</g>
+<g class="entry" style="animation-delay: 1960ms">
+<circle cx="36" cy="486" r="5" fill="url(#accent)"/>
+<text x="60" y="492" font-size="21" font-weight="700" fill="#F3F0FF">Senior Software Engineer</text>
+<text x="60" y="516" font-size="17" font-weight="400" fill="#8FA0FF">Kearney · 2024 – 2026</text>
+<text x="60" y="541" font-size="20" font-weight="400" fill="#ABA1CC">Waste analytics: queries 3 s → 500 ms</text>
+</g>
+<g class="entry" style="animation-delay: 2050ms">
+<circle cx="36" cy="566" r="5" fill="url(#accent)"/>
+<text x="60" y="572" font-size="21" font-weight="700" fill="#F3F0FF">CTO</text>
+<text x="60" y="596" font-size="17" font-weight="400" fill="#8FA0FF">IPXBit Tech Solution · 2025</text>
+<text x="60" y="621" font-size="20" font-weight="400" fill="#ABA1CC">Modular monolith; servers $15k → $2k</text>
+</g>
+<g class="entry" style="animation-delay: 2140ms">
+<circle cx="36" cy="646" r="5" fill="url(#accent)"/>
+<text x="60" y="652" font-size="21" font-weight="700" fill="#F3F0FF">Team Lead, Senior Full-Stack</text>
+<text x="60" y="676" font-size="17" font-weight="400" fill="#8FA0FF">dot.jo · 2023 – 2025</text>
+<text x="60" y="701" font-size="20" font-weight="400" fill="#ABA1CC">Headless CMS: delivery 1 month → 4 days</text>
+</g>
+<g class="entry" style="animation-delay: 2230ms">
+<circle cx="36" cy="726" r="5" fill="url(#accent)"/>
+<text x="60" y="732" font-size="21" font-weight="700" fill="#F3F0FF">CTO</text>
+<text x="60" y="756" font-size="17" font-weight="400" fill="#8FA0FF">Venu Dine · 2022 – 2023</text>
+<text x="60" y="781" font-size="20" font-weight="400" fill="#ABA1CC">Restaurant APIs: 200k+ daily requests</text>
+</g>
+</svg>
