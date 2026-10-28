@@ -18,7 +18,7 @@
 }
 </style>
 <g class="metric" style="animation-delay: 0ms">
-<text x="40" y="118" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="44" fill="#1C1530" font-weight="800">9,908</text>
+<text x="40" y="118" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="44" fill="#1C1530" font-weight="800">10,029</text>
 <text x="40" y="148" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="17" fill="#5A5275">Contributions (12 mo)</text>
 </g>
 <g class="metric" style="animation-delay: 120ms">
@@ -26,7 +26,7 @@
 <text x="270" y="148" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="17" fill="#5A5275">Public repositories</text>
 </g>
 <g class="metric" style="animation-delay: 240ms">
-<text x="500" y="118" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="44" fill="#1C1530" font-weight="800">17</text>
+<text x="500" y="118" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="44" fill="#1C1530" font-weight="800">18</text>
 <text x="500" y="148" font-family="Outfit, &#x27;Plus Jakarta Sans&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Helvetica, Arial, sans-serif" font-size="17" fill="#5A5275">Stars earned</text>
 </g>
 <g class="metric" style="animation-delay: 360ms">
